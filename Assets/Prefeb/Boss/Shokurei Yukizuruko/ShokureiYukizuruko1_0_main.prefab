@@ -1,0 +1,1491 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8402566228658998617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8402566228658998566}
+  m_Layer: 0
+  m_Name: ShokureiYukizuruko1_0_main
+  m_TagString: EnemyBullet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8402566228658998566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8402566228658998617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8402566227505279905}
+  - {fileID: 2173901535686753460}
+  - {fileID: 2173901534440640313}
+  - {fileID: 2173901535222130437}
+  - {fileID: 2173901535463919428}
+  - {fileID: 2173901535638329596}
+  - {fileID: 2173901535403253217}
+  - {fileID: 2173901534604298492}
+  - {fileID: 2173901536502224334}
+  - {fileID: 2173901534952431864}
+  - {fileID: 2173901535816584378}
+  - {fileID: 2173901536058036161}
+  - {fileID: 2173901535615792570}
+  - {fileID: 2173901534767565514}
+  - {fileID: 2173901534888062998}
+  - {fileID: 2173901535920646189}
+  - {fileID: 2173901534930604092}
+  - {fileID: 2173901535097891091}
+  - {fileID: 2173901534764396252}
+  - {fileID: 2173901536125773871}
+  - {fileID: 2173901535318575182}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2173901535474937278
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &8402566227505279905 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 2173901535474937278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566227252934938
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901535222130437 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566227252934938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566227345684236
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901535097891091 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566227345684236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566227433264721
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901535318575182 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566227433264721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566227512086875
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901535463919428 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566227512086875}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566227585565694
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901535403253217 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566227585565694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566227763876134
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901534440640313 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566227763876134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566227843192547
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901534604298492 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566227843192547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566227951841475
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901534764396252 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566227951841475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566227954947285
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901534767565514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566227954947285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566228051922467
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901534930604092 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566228051922467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566228057112295
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901534952431864 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566228057112295}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566228125707785
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901534888062998 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566228125707785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566228240922160
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901536125773871 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566228240922160}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566228306547166
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901536058036161 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566228306547166}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566228667370449
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901536502224334 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566228667370449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566228736191397
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901535615792570 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566228736191397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566228941824683
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901535686753460 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566228941824683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566228961101539
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901535638329596 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566228961101539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566229072253605
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901535816584378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566229072253605}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402566229242705458
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8402566228658998566}
+    m_Modifications:
+    - target: {fileID: 7687880523629043216, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _destroy_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043217, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: _dir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043229, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_Name
+      value: Shokurei Yukizuruko_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+--- !u!4 &2173901535920646189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687880523629043231, guid: 2c2e82824cbf2f147857fecece7fca9a, type: 3}
+  m_PrefabInstance: {fileID: 8402566229242705458}
+  m_PrefabAsset: {fileID: 0}

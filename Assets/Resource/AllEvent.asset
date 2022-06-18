@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce5ef210df164c940ad020ad35e4993d, type: 3}
+  m_Name: AllEvent
+  m_EditorClassIdentifier: 
+  GetAudioMixer: {fileID: 24100000, guid: 6f978fb423fb2514eb2052cf06f7c59a, type: 2}
+  ChineseFontAsset: {fileID: 11400000, guid: de9574f3232b0e747acd66392f509e6e, type: 2}
+  EnglishFontAsset: {fileID: 11400000, guid: e3de0cf05eeaef147b23f079b07e83eb, type: 2}
+  JapaneseFontAsset: {fileID: 11400000, guid: de9574f3232b0e747acd66392f509e6e, type: 2}

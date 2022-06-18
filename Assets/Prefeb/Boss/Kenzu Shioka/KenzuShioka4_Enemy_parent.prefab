@@ -1,0 +1,316 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4545787254385232599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4545787254385232598}
+  m_Layer: 0
+  m_Name: KenzuShioka4_Enemy_parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4545787254385232598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545787254385232599}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6113963280746483824}
+  - {fileID: 6964848955900984925}
+  - {fileID: 6964848954449031671}
+  - {fileID: 6964848955992913428}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5127728298572135272
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4545787254385232598}
+    m_Modifications:
+    - target: {fileID: 908703756751027944, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 3131060795544851810, guid: 3a8a589566e60784c87622cca99652b2, type: 3}
+    - target: {fileID: 908703756751027944, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: FirstPos.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491353, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_Name
+      value: KenzuShioka4_Enemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+--- !u!4 &6113963280746483824 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+  m_PrefabInstance: {fileID: 5127728298572135272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8311513734473012549
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4545787254385232598}
+    m_Modifications:
+    - target: {fileID: 908703756751027944, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 3131060795544851810, guid: 3a8a589566e60784c87622cca99652b2, type: 3}
+    - target: {fileID: 908703756751027944, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: FirstPos.y
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491353, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_Name
+      value: KenzuShioka4_Enemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+--- !u!4 &6964848955900984925 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+  m_PrefabInstance: {fileID: 8311513734473012549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8311513735185571084
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4545787254385232598}
+    m_Modifications:
+    - target: {fileID: 908703756751027944, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 3131060795544851810, guid: 3a8a589566e60784c87622cca99652b2, type: 3}
+    - target: {fileID: 908703756751027944, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: FirstPos.y
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491353, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_Name
+      value: KenzuShioka4_Enemy_2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+--- !u!4 &6964848955992913428 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+  m_PrefabInstance: {fileID: 8311513735185571084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8311513735791270639
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4545787254385232598}
+    m_Modifications:
+    - target: {fileID: 908703756751027944, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 3131060795544851810, guid: 3a8a589566e60784c87622cca99652b2, type: 3}
+    - target: {fileID: 908703756751027944, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: FirstPos.x
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436772035575491353, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+      propertyPath: m_Name
+      value: KenzuShioka4_Enemy_1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+--- !u!4 &6964848954449031671 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1436772035575491352, guid: 82c69a4f5884b9a48ac9311136f4e884, type: 3}
+  m_PrefabInstance: {fileID: 8311513735791270639}
+  m_PrefabAsset: {fileID: 0}
