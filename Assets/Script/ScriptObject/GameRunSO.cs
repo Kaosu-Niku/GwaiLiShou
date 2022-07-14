@@ -6,7 +6,7 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "GameRun", menuName = "ScriptObject/GameRun")]
 public class GameRunSO : ScriptableObject
 {
-    public static GameObject Player;//? 玩家
+    public static Player Player;//? 玩家
     public static List<GameObject> AllEnemy = new List<GameObject>();//? 所有敵人
     public static GameObject FirstEnemy;//? 優先敵人
     public static UnityAction PlayerMissClearBulletAction;//? 玩家MISS後清除場上彈幕事件(所有需消除的彈幕需訂閱)

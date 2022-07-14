@@ -50,18 +50,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eba82a161ceb42418fc1eb3981f0e55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "\u6539\u8B8A\u904B\u884C\u6642\u9593": 0
   "\u4E0D\u6703Miss\u6A21\u5F0F": 0
   "\u4E0D\u6703Death\u6A21\u5F0F": 0
-  Bullet:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 3240743488517541379, guid: 123830c6374f27a47979e0fc59c1f611, type: 3}
+  GetPool: {fileID: 1255774294846621830}
   ResetPoint: {x: 0, y: -3.5, z: 0}
   AllClip: []
 --- !u!50 &543561148116442138

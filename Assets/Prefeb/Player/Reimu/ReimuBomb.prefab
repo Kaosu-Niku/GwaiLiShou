@@ -133,7 +133,7 @@ MonoBehaviour:
   BulletMagn: 1
   Speed: 10
   NotClear: 1
-  AttackTime: 0
+  AttackTime: 4
 --- !u!50 &3646389000108479709
 Rigidbody2D:
   serializedVersion: 4

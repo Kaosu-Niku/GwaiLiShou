@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour
     {
         GameRunSO.AllEnemy.Remove(this.gameObject);
     }
-    protected void Awake()
+    private void Start()
     {
         transform.position = FirstPos;
         Invoke("Death", DestroyTime);

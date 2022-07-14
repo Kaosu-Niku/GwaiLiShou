@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SanaeA : Player
 {
+    BulletSystem Bomb;
     protected override void CustomUseBomb()
     {
-        Instantiate(Bullet[0], new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+        Bomb.gameObject.SetActive(true);
     }
     protected override void CustomUseShoot()
     {
@@ -16,22 +17,21 @@ public class SanaeA : Player
     {
         while (MyInput.Player.Shoot.ReadValue<float>() == 1)
         {
-            ShootTime += Time.deltaTime;
-            if (ShootTime > 0.1f)
+            if (MyInput.Player.Slow.ReadValue<float>() == 1)//? 集中射擊
             {
-                if (MyInput.Player.Slow.ReadValue<float>() == 1)//? 集中射擊
-                {
-                    Instantiate(Bullet[2], transform.position, Quaternion.identity);
-                }
-                else//? 一般射擊
-                {
-                    Instantiate(Bullet[1], transform.position, Quaternion.identity);
-                }
-                ShootTime = 0;
+                GetPool.OutBullet("A1", transform.position, Quaternion.identity);
             }
-            yield return 0;
+            else//? 一般射擊
+            {
+                GetPool.OutBullet("A0", transform.position, Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.1f);
         }
-        ShootTime = 0;
         yield break;
+    }
+    private void Start()
+    {
+        Bomb = GetPool.OutBullet("Bomb", transform.position, Quaternion.identity);
+        Bomb.gameObject.SetActive(false);
     }
 }

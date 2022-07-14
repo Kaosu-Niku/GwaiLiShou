@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameRun : MonoBehaviour
 {
     [SerializeField] AudioClip FirstMusic;
-    [SerializeField] List<GameObject> AllPlayer = new List<GameObject>();//? 根據選項生成對應機體
+    [SerializeField] List<Player> AllPlayer = new List<Player>();//? 根據選項生成對應機體
     [SerializeField] List<GameObject> AllEnemy = new List<GameObject>();//? 所有生成的敵人
     [SerializeField] List<float> AllEnemyTime = new List<float>();//? 所有生成敵人的對應時間
     private void Awake()
@@ -18,7 +18,7 @@ public class GameRun : MonoBehaviour
         GameDataSO.Score = 0;
         GameDataSO.Point = 0;
         GameDataSO.Graze = 0;
-        GameRunSO.Player = Instantiate(AllPlayer[GameDataSO.GameType]);
+        Instantiate(AllPlayer[GameDataSO.GameType]);
         GameRunSO.ChangeMusicTrigger(FirstMusic);
         StartCoroutine(AllEnemyInstantiate());
     }

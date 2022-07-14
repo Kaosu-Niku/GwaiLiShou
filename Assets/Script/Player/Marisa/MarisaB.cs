@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class MarisaB : Player
 {
+    BulletSystem Bomb;
+    BulletSystem B1;
     protected override void CustomUseBomb()
     {
-        Instantiate(Bullet[0], new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+        Bomb.gameObject.SetActive(true);
     }
     protected override void CustomUseShoot()
     {
@@ -16,30 +18,26 @@ public class MarisaB : Player
     {
         while (MyInput.Player.Shoot.ReadValue<float>() == 1)
         {
-            ShootTime += Time.deltaTime;
-            if (ShootTime > 0.1f)
+            if (MyInput.Player.Slow.ReadValue<float>() == 1)//? 集中射擊
             {
-                if (MyInput.Player.Slow.ReadValue<float>() == 1)//? 集中射擊
-                {
-                    Bullet[2].SetActive(true);
-                }
-                else//? 一般射擊
-                {
-                    Bullet[2].SetActive(false);
-                    for (int x = 0; x < 5; x++)
-                        Instantiate(Bullet[1], new Vector3(transform.position.x - 0.4f + x * 0.2f, transform.position.y, 0), Quaternion.identity);
-                }
-                ShootTime = 0;
+                B1.gameObject.SetActive(true);
             }
-            yield return 0;
+            else//? 一般射擊
+            {
+                B1.gameObject.SetActive(false);
+                for (int x = 0; x < 5; x++)
+                    GetPool.OutBullet("B0", new Vector3(transform.position.x - 0.4f + x * 0.2f, transform.position.y, 0), Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.1f);
         }
-        ShootTime = 0;
-        Bullet[2].SetActive(false);
+        B1.gameObject.SetActive(false);
         yield break;
     }
-    new void Start()
+    private void Start()
     {
-        base.Start();
-        Bullet[2].SetActive(false);
+        Bomb = GetPool.OutBullet("Bomb", transform.position, Quaternion.identity);
+        Bomb.gameObject.SetActive(false);
+        B1 = GetPool.OutBullet("B1", transform.position, Quaternion.identity);
+        B1.gameObject.SetActive(false);
     }
 }

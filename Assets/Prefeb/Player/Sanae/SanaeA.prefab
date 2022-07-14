@@ -188,13 +188,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2955fac6963a63f4abd66e8625dccbde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "\u6539\u8B8A\u904B\u884C\u6642\u9593": 0
   "\u4E0D\u6703Miss\u6A21\u5F0F": 0
   "\u4E0D\u6703Death\u6A21\u5F0F": 0
-  Bullet:
-  - {fileID: 4927779967415945042, guid: ae92862af8c49304da61ed0a8b22a92a, type: 3}
-  - {fileID: 636816727500001169, guid: ad4c1e5284825a74e9ee5e6ca2851975, type: 3}
-  - {fileID: 6735223196164645518, guid: 180e432a3ab2a944b841d0cd899a75a4, type: 3}
+  GetPool: {fileID: 6266868408268169127}
   ResetPoint: {x: 0, y: -3.5, z: 0}
   AllClip: []
 --- !u!50 &483664936124583848

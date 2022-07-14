@@ -11,7 +11,6 @@ public abstract class BulletSystem : MonoBehaviour
     private IEnumerator Do()
     {
         yield return StartCoroutine(FirstDoing());
-        MyPool.InBullet(MyTag, this);
         gameObject.SetActive(false);
     }
     private void OnEnable()
@@ -24,5 +23,6 @@ public abstract class BulletSystem : MonoBehaviour
         {
             StopCoroutine(C);
         }
+        MyPool.InBullet(MyTag, this);
     }
 }

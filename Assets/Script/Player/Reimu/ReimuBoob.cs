@@ -4,32 +4,42 @@ using UnityEngine;
 
 public class ReimuBoob : Bullet
 {
-    [SerializeField] float AttackTime;
-    GameObject MyParent;
-    GameObject Player;
+    Player Player;
     GameObject TheEnemy;
     private void Awake()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        Player = GameRunSO.Player;
+        transform.parent = Player.transform;
     }
     protected override IEnumerator Doing()
     {
-        MyParent = transform.parent.gameObject;
-        TheEnemy = GameRunSO.GetFirstEnemy();
-        if (Player == true && MyParent == true)
-            MyParent.transform.parent = Player.transform;
-        for (float t = 0; t < AttackTime; t += Time.deltaTime)
+        yield return 0;
+        transform.Translate(1, 0, 0);
+        for (float t = 0; t < 4; t += Time.deltaTime)
         {
             transform.RotateAround(Player.transform.position, Vector3.back, 100 * Time.deltaTime);
             yield return 0;
         }
-        yield return 0;
-        while (TheEnemy == true)
+        for (float t = 0; t < 3; t += Time.deltaTime)
         {
-            Vector3 dir = TheEnemy.transform.position - transform.position;
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            transform.Translate(Speed * Time.deltaTime, 0, 0);
+            if (TheEnemy != null)
+            {
+                if (Vector3.Distance(TheEnemy.transform.position, transform.position) > 0.1f)
+                {
+                    Vector3 dir = TheEnemy.transform.position - transform.position;
+                    float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+                    transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                    transform.Translate(Speed * Time.deltaTime, 0, 0);
+                }
+                else
+                {
+                    yield break;
+                }
+            }
+            else
+            {
+                TheEnemy = GameRunSO.GetFirstEnemy();
+            }
             yield return 0;
         }
     }

@@ -69,7 +69,7 @@ public class BulletPool : MonoBehaviour
     {
         if (AllBulletPool.ContainsKey(tag) == true)
         {
-            AllBulletPool[tag].Enqueue(b);
+            AllBulletPool[tag].Enqueue(b); Debug.Log(AllBulletPool[tag].Count);
         }
     }
 

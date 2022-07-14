@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7051869467556039075}
   - component: {fileID: 4099744447806961416}
   m_Layer: 0
-  m_Name: SanaeBulletA0Child
+  m_Name: SanaeBulletA0C0
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

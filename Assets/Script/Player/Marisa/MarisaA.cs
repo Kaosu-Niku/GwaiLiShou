@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class MarisaA : Player
 {
+    BulletSystem Bomb;
+    BulletSystem[] A0 = new BulletSystem[5];
+    BulletSystem A1;
     protected override void CustomUseBomb()
     {
-        Instantiate(Bullet[7], new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+        Bomb.gameObject.SetActive(true);
     }
     protected override void CustomUseShoot()
     {
@@ -16,37 +19,36 @@ public class MarisaA : Player
     {
         while (MyInput.Player.Shoot.ReadValue<float>() == 1)
         {
-            ShootTime += Time.deltaTime;
-            if (ShootTime > 0.1f)
+            if (MyInput.Player.Slow.ReadValue<float>() == 1)//? 集中射擊
             {
-                if (MyInput.Player.Slow.ReadValue<float>() == 1)//? 集中射擊
-                {
-                    for (int x = 0; x < 5; x++)
-                        Bullet[x].SetActive(false);
-                    for (int x = 5; x < 7; x++)
-                        Bullet[x].SetActive(true);
-                }
-                else//? 一般射擊
-                {
-                    for (int x = 0; x < 5; x++)
-                        Bullet[x].SetActive(true);
-                    for (int x = 5; x < 7; x++)
-                        Bullet[x].SetActive(false);
-                }
-                ShootTime = 0;
+                for (int x = 0; x < 5; x++)
+                    A0[x].gameObject.SetActive(false);
+                A1.gameObject.SetActive(true);
             }
-            yield return 0;
+            else//? 一般射擊
+            {
+                for (int x = 0; x < 5; x++)
+                    A0[x].gameObject.SetActive(true);
+                A1.gameObject.SetActive(false);
+            }
+            yield return new WaitForSeconds(0.1f);
         }
-        ShootTime = 0;
-        for (int x = 0; x < 7; x++)
-            Bullet[x].SetActive(false);
+        for (int x = 0; x < 5; x++)
+            A0[x].gameObject.SetActive(false);
+        A1.gameObject.SetActive(false);
         yield break;
     }
-    new void Start()
+    private void Start()
     {
-        base.Start();
-        for (int x = 0; x < 7; x++)
-            Bullet[x].SetActive(false);
+        Bomb = GetPool.OutBullet("Bomb", transform.position, Quaternion.identity);
+        Bomb.gameObject.SetActive(false);
+        for (int x = 0; x < 5; x++)
+        {
+            A0[x] = GetPool.OutBullet("A0", transform.position, Quaternion.Euler(0, 0, 50 + x * 20));
+            A0[x].gameObject.SetActive(false);
+        }
+        A1 = GetPool.OutBullet("A1", transform.position, Quaternion.identity);
+        A1.gameObject.SetActive(false);
     }
 }
 

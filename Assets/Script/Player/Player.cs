@@ -4,14 +4,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour
+public abstract class Player : MonoBehaviour
 {
-    [SerializeField] float 改變運行時間;
     [SerializeField] bool 不會Miss模式;//* 開啟即無敵，完全不會受傷 
     [SerializeField] bool 不會Death模式;//* 會受傷，但不會滿目瘡痍   
+    [SerializeField] protected BulletPool GetPool;
     bool DontControl = false;//* 防止玩家操控
-    [SerializeField] protected List<GameObject> Bullet; //* 子彈
-    protected float ShootTime; //* 射擊間隔
     bool IsMiss = false;//* 是否中彈(同時代表無敵時間，固定2秒)    
     bool Bombing = false;//* Bomb是否處於開啟狀態 
     bool CanSkill = true;//* 是否能使用Skill 
@@ -20,10 +18,12 @@ public class Player : MonoBehaviour
     protected InputControl MyInput;
     protected AudioSource MyAudio;
     [SerializeField] protected List<AudioClip> AllClip = new List<AudioClip>();
-    protected void Awake()
+    private void Awake()
     {
+        GameRunSO.Player = this;
         MyInput = new InputControl();
-        AllEventSO.ChangeTime(改變運行時間);
+        MyAudio = GetComponent<AudioSource>();
+        transform.position = ResetPoint;
     }
     private void OnEnable()
     {
@@ -45,11 +45,6 @@ public class Player : MonoBehaviour
         GameRunSO.ForPlayerDontControlAction -= ForPlayerDontControl;
         GameRunSO.PlayerMissAction -= Miss;
     }
-    protected void Start()
-    {
-        MyAudio = GetComponent<AudioSource>();
-        transform.position = ResetPoint;
-    }
     protected void UseShoot(InputAction.CallbackContext context)//? 射擊
     {
         if (DontControl == false || 不會Miss模式 == true)
@@ -69,8 +64,8 @@ public class Player : MonoBehaviour
     {
         GameRunSO.OpenStopPanelTrigger();
     }
-    protected virtual void CustomUseShoot() { }
-    protected virtual void CustomUseBomb() { }
+    protected abstract void CustomUseShoot();
+    protected abstract void CustomUseBomb();
     IEnumerator UseBombIEnum()
     {
         Bombing = true;

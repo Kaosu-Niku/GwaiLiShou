@@ -129,10 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf3afa287236f6449e0a4b1212d6cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hp: 0
+  Hp: 999999
   FirstPos: {x: 0, y: 0, z: 0}
   Speed: 0
-  DestroyTime: 0
+  DestroyTime: 999
   Score: 0
 --- !u!50 &6833034752105652227
 Rigidbody2D:
