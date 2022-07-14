@@ -184,7 +184,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6741047168989259243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5, y: -3.5000002, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6741047169301259285}
@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "\u4E0D\u6703Miss\u6A21\u5F0F": 0
-  "\u4E0D\u6703Death\u6A21\u5F0F": 0
+  "\u4E0D\u6703Death\u6A21\u5F0F": 1
   GetPool: {fileID: 1648099765361677536}
   ResetPoint: {x: 0, y: -3.5, z: 0}
   AllClip: []

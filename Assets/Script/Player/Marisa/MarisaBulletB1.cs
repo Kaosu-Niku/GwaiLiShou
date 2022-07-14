@@ -4,21 +4,29 @@ using UnityEngine;
 
 public class MarisaBulletB1 : Bullet
 {
+    Player player;
     Collider2D Col;
     float Dis;
     float DisMagn;
     float NewBulletDamage;
-    Coroutine C;
     private void Awake()
     {
         Col = GetComponent<Collider2D>();
+        player = GameRunSO.Player;
+        transform.parent = player.transform;
     }
     protected override IEnumerator Doing()
     {
         Col.enabled = true;
-        yield return new WaitForSeconds(1);
+        while (true)
+        {
+            Col.enabled = true;
+            yield return new WaitForSeconds(0.1f);
+            Col.enabled = false;
+            yield return 0;
+        }
     }
-    private void OnTriggerStay2D(Collider2D other)
+    new void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
@@ -30,15 +38,7 @@ public class MarisaBulletB1 : Bullet
             else
                 DisMagn = 1;
             BulletAttack = (GameDataSO.PlayerPower + GameDataSO.PlayerSkillPower) * BulletMagn * DisMagn;
-            base.OnTriggerEnter2D(other);
-            if (C == null)
-                C = StartCoroutine(ColClose());
         }
-    }
-    IEnumerator ColClose()
-    {
-        Col.enabled = false;
-        yield return new WaitForSeconds(0.1f);
-        Col.enabled = true;
+        base.OnTriggerEnter2D(other);
     }
 }

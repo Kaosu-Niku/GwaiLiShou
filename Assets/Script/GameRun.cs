@@ -18,7 +18,7 @@ public class GameRun : MonoBehaviour
         GameDataSO.Score = 0;
         GameDataSO.Point = 0;
         GameDataSO.Graze = 0;
-        Instantiate(AllPlayer[GameDataSO.GameType]);
+        //! Instantiate(AllPlayer[GameDataSO.GameType]);
         GameRunSO.ChangeMusicTrigger(FirstMusic);
         StartCoroutine(AllEnemyInstantiate());
     }

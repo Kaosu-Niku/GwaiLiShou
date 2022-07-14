@@ -18,7 +18,10 @@ public class Enemy : MonoBehaviour
     }
     public void Hurt(float damage)
     {
-        Hp -= damage;
+        Hp -= damage; Debug.Log(Hp);
+        {
+
+        }
         if (Hp < 0)
             Death();
     }

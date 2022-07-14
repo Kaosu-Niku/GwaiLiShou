@@ -44,7 +44,7 @@ public class MarisaA : Player
         Bomb.gameObject.SetActive(false);
         for (int x = 0; x < 5; x++)
         {
-            A0[x] = GetPool.OutBullet("A0", transform.position, Quaternion.Euler(0, 0, 50 + x * 20));
+            A0[x] = GetPool.OutBullet("A0", transform.position, Quaternion.Euler(0, 0, 40 + x * 20));
             A0[x].gameObject.SetActive(false);
         }
         A1 = GetPool.OutBullet("A1", transform.position, Quaternion.identity);

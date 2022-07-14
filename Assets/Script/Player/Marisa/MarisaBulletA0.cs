@@ -4,29 +4,23 @@ using UnityEngine;
 
 public class MarisaBulletA0 : Bullet
 {
+    Player player;
     Collider2D Col;
-    Coroutine C;
     private void Awake()
     {
         Col = GetComponent<Collider2D>();
+        player = GameRunSO.Player;
+        transform.parent = player.transform;
     }
     protected override IEnumerator Doing()
     {
         Col.enabled = true;
-        yield return new WaitForSeconds(1);
-    }
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
+        while (true)
         {
-            if (C == null)
-                C = StartCoroutine(ColClose());
+            Col.enabled = true;
+            yield return new WaitForSeconds(0.1f);
+            Col.enabled = false;
+            yield return 0;
         }
-    }
-    IEnumerator ColClose()
-    {
-        Col.enabled = false;
-        yield return new WaitForSeconds(0.1f);
-        Col.enabled = true;
     }
 }

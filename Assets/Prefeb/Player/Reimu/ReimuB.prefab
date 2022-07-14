@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "\u4E0D\u6703Miss\u6A21\u5F0F": 0
-  "\u4E0D\u6703Death\u6A21\u5F0F": 0
+  "\u4E0D\u6703Death\u6A21\u5F0F": 1
   GetPool: {fileID: 249492912261644256}
   ResetPoint: {x: 0, y: -3.5, z: 0}
   AllClip: []
@@ -362,7 +362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SetAllBullet:
   - tag: B0
-    bullet: {fileID: 7087613530179056636, guid: 0778d69b31220ac4d956f3c39cbc67a4, type: 3}
+    bullet: {fileID: 4908803858080689698, guid: aeca51585878dde4296c7b64d29450fe, type: 3}
     count: 10
   - tag: Bomb
     bullet: {fileID: 6329072730846220460, guid: 303d76198837b91419b88b40beb7dd53, type: 3}

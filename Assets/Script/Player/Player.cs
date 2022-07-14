@@ -117,7 +117,7 @@ public abstract class Player : MonoBehaviour
                 {
                     //? BIU演出時間
                     ForPlayerDontControl(true);
-                    MyAudio.clip = AllClip[0]; MyAudio.Play();
+                    //MyAudio.clip = AllClip[0]; MyAudio.Play();
                     yield return new WaitForSeconds(1);
                     transform.position = ResetPoint;
                     GameDataSO.PlayerHp -= 1;

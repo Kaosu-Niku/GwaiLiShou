@@ -6,7 +6,10 @@ public class ReimuB : Player
 {
     protected override void CustomUseBomb()
     {
-        GetPool.OutBullet("Bomb", transform.position, Quaternion.identity);
+        for (int x = 0; x < 8; x++)
+        {
+            GetPool.OutBullet("Bomb", transform.position, Quaternion.Euler(0, 0, x * 45));
+        }
     }
     protected override void CustomUseShoot()
     {

@@ -20,7 +20,7 @@ public class BulletPool : MonoBehaviour
             Queue<BulletSystem> q = new Queue<BulletSystem>();
             for (int y = 0; y < SetAllBullet[x].count; y++)
             {
-                BulletSystem b = Instantiate(SetAllBullet[x].bullet, transform);
+                BulletSystem b = Instantiate(SetAllBullet[x].bullet);
                 q.Enqueue(b);
                 b.MyPool = this;
                 b.MyTag = SetAllBullet[x].tag;
@@ -47,7 +47,7 @@ public class BulletPool : MonoBehaviour
                 {
                     if (SetAllBullet[x].tag == tag)
                     {
-                        BulletSystem b = Instantiate(SetAllBullet[x].bullet, transform);
+                        BulletSystem b = Instantiate(SetAllBullet[x].bullet);
                         b.MyPool = this;
                         b.MyTag = SetAllBullet[x].tag;
                         b.transform.position = pos;
@@ -69,7 +69,7 @@ public class BulletPool : MonoBehaviour
     {
         if (AllBulletPool.ContainsKey(tag) == true)
         {
-            AllBulletPool[tag].Enqueue(b); Debug.Log(AllBulletPool[tag].Count);
+            AllBulletPool[tag].Enqueue(b);
         }
     }
 

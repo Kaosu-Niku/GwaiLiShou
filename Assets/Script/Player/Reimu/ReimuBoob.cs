@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class ReimuBoob : Bullet
 {
-    Player Player;
+    Player player;
     GameObject TheEnemy;
     private void Awake()
     {
-        Player = GameRunSO.Player;
-        transform.parent = Player.transform;
+        player = GameRunSO.Player;
     }
     protected override IEnumerator Doing()
     {
         yield return 0;
-        transform.Translate(1, 0, 0);
+
         for (float t = 0; t < 4; t += Time.deltaTime)
         {
-            transform.RotateAround(Player.transform.position, Vector3.back, 100 * Time.deltaTime);
+            transform.position = player.transform.position;
+            transform.Translate(1, 0, 0);
+            transform.Rotate(0, 0, 100 * Time.deltaTime);
             yield return 0;
         }
         for (float t = 0; t < 3; t += Time.deltaTime)
