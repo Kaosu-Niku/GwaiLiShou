@@ -6,13 +6,13 @@ public class ReimuBulletA1 : Bullet
 {
     Collider2D Col;
     GameObject TheEnemy;
-    private void OnEnable()
-    {
-        StartCoroutine(Go());
-    }
-    IEnumerator Go()
+    Coroutine C;
+    private void Awake()
     {
         Col = GetComponent<Collider2D>();
+    }
+    protected override IEnumerator Doing()
+    {
         Col.enabled = true;
         TheEnemy = GameRunSO.GetFirstEnemy();
         transform.rotation = Quaternion.Euler(0, 0, 90);
@@ -24,12 +24,14 @@ public class ReimuBulletA1 : Bullet
             transform.position = Vector3.MoveTowards(transform.position, TheEnemy.transform.position, 10 * Time.deltaTime);
             yield return 0;
         }
-        yield break;
     }
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
-            StartCoroutine(ColClose());
+        {
+            if (C == null)
+                C = StartCoroutine(ColClose());
+        }
     }
     IEnumerator ColClose()
     {

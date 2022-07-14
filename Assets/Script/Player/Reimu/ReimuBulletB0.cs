@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class ReimuBulletB0 : Bullet
 {
-    private void Start()
-    {
-        StartCoroutine(Go());
-    }
-    IEnumerator Go()
+    protected override IEnumerator Doing()
     {
         while (true)
         {

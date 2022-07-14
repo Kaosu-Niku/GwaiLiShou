@@ -1,5 +1,61 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1575344568053066092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5328087251235156006}
+  - component: {fileID: 6266868408268169127}
+  m_Layer: 0
+  m_Name: BulletPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5328087251235156006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575344568053066092}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.5, y: 3.5000002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2427157182173491320}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6266868408268169127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575344568053066092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d8c9593b3ef1184182bf4d77904122d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetAllBullet:
+  - tag: A0
+    bullet: {fileID: 1591489252329025587, guid: 078328c22d4a24c4797189fad23f2038, type: 3}
+    count: 10
+  - tag: A0C0
+    bullet: {fileID: 3606653475014146632, guid: 2b723aa633ba7e04281628d0efff9c7f, type: 3}
+    count: 10
+  - tag: A1
+    bullet: {fileID: 4883260947083082654, guid: e0a3fae8ed289f240b92b09de22b0401, type: 3}
+    count: 5
+  - tag: Bomb
+    bullet: {fileID: 4927779967415945043, guid: ae92862af8c49304da61ed0a8b22a92a, type: 3}
+    count: 1
 --- !u!1 &2427157181962285561
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +172,7 @@ Transform:
   - {fileID: 2427157181962285447}
   - {fileID: 3061028260700065309}
   - {fileID: 2422864076861372387}
+  - {fileID: 5328087251235156006}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

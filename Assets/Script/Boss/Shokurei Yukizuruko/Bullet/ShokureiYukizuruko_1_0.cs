@@ -11,12 +11,9 @@ public class ShokureiYukizuruko_1_0 : EnemyBullet
     Vector3 FirstPos;//* 第一次定位
     Vector3 TwoPos;//* 第二次定位
     float OverTime;//* 差值計時
-    private void Start()
+    protected override IEnumerator Doing()
     {
-        StartCoroutine(OneAction());
-    }
-    IEnumerator OneAction()
-    {
+        OverTime = 0;
         FirstHigh = transform.position.y;
         High = Random.Range(0, 2);
         Move = Random.Range(1, 5);

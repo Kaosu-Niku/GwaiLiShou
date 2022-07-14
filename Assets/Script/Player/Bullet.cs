@@ -2,27 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public abstract class Bullet : BulletSystem
 {
+    protected abstract IEnumerator Doing();
+    protected override IEnumerator FirstDoing()
+    {
+        yield return StartCoroutine(Doing());
+    }
     [SerializeField] protected float BulletMagn; //* 子彈傷害倍率
     [SerializeField] protected float Speed; //* 子彈移動速度
     protected float BulletAttack; //* 子彈總攻擊力
-    [SerializeField] bool DontDestroy; //* 子彈是否要被正常刪除(若非正常需在子腳本自訂刪除)
-    [SerializeField] float DestroyTime; //* 刪除時間
-
-    protected void Awake()
-    {
-        //? 子彈總攻擊力
-        BulletAttack = (GameDataSO.PlayerPower + GameDataSO.PlayerSkillPower) * BulletMagn;
-        if (DontDestroy == false)
-            Destroy(this.gameObject, DestroyTime);
-    }
+    [SerializeField] bool NotClear;//* 該子彈是否不能被正常清除
     protected void OnTriggerEnter2D(Collider2D other)
     {
         //? 離開戰鬥區域
         if (other.gameObject.CompareTag("Wall"))
-            if (DontDestroy == false)
-                Destroy(this.gameObject);
+            if (NotClear == false)
+                gameObject.SetActive(false);
         //? 碰到敵人
         if (other.gameObject.CompareTag("Enemy"))
         {
@@ -37,9 +33,14 @@ public class Bullet : MonoBehaviour
             }
             finally
             {
-                if (DontDestroy == false)
-                    Destroy(this.gameObject);
+                if (NotClear == false)
+                    gameObject.SetActive(false);
             }
         }
+    }
+    protected void Start()
+    {
+        //? 子彈總攻擊力
+        BulletAttack = (GameDataSO.PlayerPower + GameDataSO.PlayerSkillPower) * BulletMagn;
     }
 }

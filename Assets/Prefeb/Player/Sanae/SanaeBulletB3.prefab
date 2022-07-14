@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3558799255424155296
+--- !u!1 &2233485198514048607
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 435573857514346447}
-  - component: {fileID: 3528397002623075553}
+  - component: {fileID: 7500761996330984034}
+  - component: {fileID: 7597068828013230493}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -17,27 +17,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &435573857514346447
+--- !u!4 &7500761996330984034
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3558799255424155296}
+  m_GameObject: {fileID: 2233485198514048607}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 0.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 8065461070158352947}
+  m_Father: {fileID: 8096780398304508474}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3528397002623075553
+--- !u!212 &7597068828013230493
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3558799255424155296}
+  m_GameObject: {fileID: 2233485198514048607}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &5389804254900275452
+--- !u!1 &6160821667031851253
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,57 +90,58 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8065461070158352947}
-  - component: {fileID: -5470089654963551750}
-  - component: {fileID: 3423755022495681676}
-  - component: {fileID: 2973792024486981995}
+  - component: {fileID: 8096780398304508474}
+  - component: {fileID: 8966347203775545732}
+  - component: {fileID: 3472367458610734213}
+  - component: {fileID: 6160821667031851252}
   m_Layer: 0
-  m_Name: SanaeBulletB1_4
+  m_Name: SanaeBulletB3
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8065461070158352947
+--- !u!4 &8096780398304508474
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5389804254900275452}
+  m_GameObject: {fileID: 6160821667031851253}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.5, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 435573857514346447}
+  - {fileID: 7500761996330984034}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5470089654963551750
+--- !u!114 &8966347203775545732
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5389804254900275452}
+  m_GameObject: {fileID: 6160821667031851253}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4302ae8f41830e43af8cb3712958bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyPool: {fileID: 0}
+  MyTag: 
   BulletMagn: 1
   Speed: 0
-  DontDestroy: 1
-  DestroyTime: 0
+  NotClear: 0
   RotateSpeed: 500
---- !u!50 &3423755022495681676
+--- !u!50 &3472367458610734213
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5389804254900275452}
+  m_GameObject: {fileID: 6160821667031851253}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -154,13 +155,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &2973792024486981995
+--- !u!61 &6160821667031851252
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5389804254900275452}
+  m_GameObject: {fileID: 6160821667031851253}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}

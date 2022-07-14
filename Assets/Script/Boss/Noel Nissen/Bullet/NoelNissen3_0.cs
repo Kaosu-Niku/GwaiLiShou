@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class NoelNissen3_0 : EnemyBullet
 {
+    [SerializeField] BulletPool B;
     [SerializeField] GameObject HighChild;
     [SerializeField] GameObject LowChild;
-    void Start()
+    protected override IEnumerator Doing()
     {
-        StartCoroutine(Go());
-    }
-    IEnumerator Go()
-    {
-
         Speed += Random.Range(-2, 3) * 0.5f;
         int h = Random.Range(0, 10);
         int w = Random.Range(0, 4);
@@ -31,10 +27,11 @@ public class NoelNissen3_0 : EnemyBullet
         base.OnTriggerEnter2D(other);
         if (other.gameObject.CompareTag("TriggerWall"))
         {
+            //! 錯誤待修補
             if (transform.position.y > 0)
-                Instantiate(HighChild, transform.position, Quaternion.identity);
+                B.OutBullet("HighChild", transform.position, Quaternion.identity);
             else
-                Instantiate(LowChild, transform.position, Quaternion.identity);
+                B.OutBullet("LowChild", transform.position, Quaternion.identity);
         }
     }
 }

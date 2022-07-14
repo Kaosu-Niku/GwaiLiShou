@@ -6,20 +6,18 @@ public class SanaeBulletA1 : Bullet
 {
     Collider2D Col;
     [SerializeField] Collider2D TriggerCol;
-    private void Start()
-    {
-        StartCoroutine(Go());
-    }
-    IEnumerator Go()
+    private void Awake()
     {
         Col = GetComponent<Collider2D>();
+    }
+    protected override IEnumerator Doing()
+    {
         Col.enabled = false;
         for (float t = 0; t < 5; t += Time.deltaTime)
         {
             transform.Translate(0, Speed * Time.deltaTime, 0);
             yield return 0;
         }
-        Destroy(this.gameObject);
     }
     new void OnTriggerEnter2D(Collider2D other)
     {
@@ -38,7 +36,7 @@ public class SanaeBulletA1 : Bullet
             else
             {
                 base.OnTriggerEnter2D(other);
-                Destroy(this.gameObject);
+                gameObject.SetActive(false);
             }
         }
     }

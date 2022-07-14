@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2390580866439299874}
   - component: {fileID: 8652961417471065481}
   m_Layer: 0
-  m_Name: SanaeBoom
+  m_Name: SanaeBomb
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,10 +128,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855c15794b6dc6c41851bc4ba742ca45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyPool: {fileID: 0}
+  MyTag: 
   BulletMagn: 1
   Speed: 0
-  DontDestroy: 1
-  DestroyTime: 0
+  NotClear: 0
 --- !u!50 &2390580866439299874
 Rigidbody2D:
   serializedVersion: 4

@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class KenzuShioka2_0 : EnemyBullet
 {
-    private void Start()
-    {
-        StartCoroutine(Go());
-    }
-    IEnumerator Go()
+    protected override IEnumerator Doing()
     {
         Vector3 dir = GameRunSO.Player.transform.position - transform.position;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;

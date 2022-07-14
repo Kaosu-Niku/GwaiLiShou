@@ -8,10 +8,15 @@ public class MarisaBulletB1 : Bullet
     float Dis;
     float DisMagn;
     float NewBulletDamage;
-    private void OnEnable()
+    Coroutine C;
+    private void Awake()
     {
         Col = GetComponent<Collider2D>();
+    }
+    protected override IEnumerator Doing()
+    {
         Col.enabled = true;
+        yield return new WaitForSeconds(1);
     }
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -26,7 +31,8 @@ public class MarisaBulletB1 : Bullet
                 DisMagn = 1;
             BulletAttack = (GameDataSO.PlayerPower + GameDataSO.PlayerSkillPower) * BulletMagn * DisMagn;
             base.OnTriggerEnter2D(other);
-            StartCoroutine(ColClose());
+            if (C == null)
+                C = StartCoroutine(ColClose());
         }
     }
     IEnumerator ColClose()

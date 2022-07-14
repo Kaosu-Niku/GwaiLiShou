@@ -5,17 +5,24 @@ using UnityEngine;
 public class MarisaBulletA0 : Bullet
 {
     Collider2D Col;
-    private void OnEnable()
+    Coroutine C;
+    private void Awake()
     {
         Col = GetComponent<Collider2D>();
+    }
+    protected override IEnumerator Doing()
+    {
         Col.enabled = true;
+        yield return new WaitForSeconds(1);
     }
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
-            StartCoroutine(ColClose());
+        {
+            if (C == null)
+                C = StartCoroutine(ColClose());
+        }
     }
-
     IEnumerator ColClose()
     {
         Col.enabled = false;

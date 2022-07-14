@@ -8,13 +8,12 @@ public class ReimuBoob : Bullet
     GameObject MyParent;
     GameObject Player;
     GameObject TheEnemy;
-    private void Start()
-    {
-        StartCoroutine(Go());
-    }
-    IEnumerator Go()
+    private void Awake()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
+    }
+    protected override IEnumerator Doing()
+    {
         MyParent = transform.parent.gameObject;
         TheEnemy = GameRunSO.GetFirstEnemy();
         if (Player == true && MyParent == true)
@@ -33,7 +32,6 @@ public class ReimuBoob : Bullet
             transform.Translate(Speed * Time.deltaTime, 0, 0);
             yield return 0;
         }
-        Destroy(this.gameObject);
     }
     new void OnTriggerEnter2D(Collider2D other)
     {
@@ -42,7 +40,7 @@ public class ReimuBoob : Bullet
         {
             EnemyBullet e = other.GetComponent<EnemyBullet>();
             if (e)
-                e.NowDestroyBullet();
+                e.CallNowClearBullet();
         }
     }
 }

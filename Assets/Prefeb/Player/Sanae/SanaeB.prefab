@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &236956965583798314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3657782006233945968}
+  - component: {fileID: 1648099765361677536}
+  m_Layer: 0
+  m_Name: BulletPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3657782006233945968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236956965583798314}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.5, y: 3.5000002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6741047168989259242}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1648099765361677536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236956965583798314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d8c9593b3ef1184182bf4d77904122d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetAllBullet:
+  - tag: B0
+    bullet: {fileID: 7915536157147382526, guid: ad83b491034415b40a1a36d909909d89, type: 3}
+    count: 10
+  - tag: B1
+    bullet: {fileID: -1446766962955646498, guid: 4695e5517e045c342938a4a83db065c7, type: 3}
+    count: 2
+  - tag: B2
+    bullet: {fileID: 8993738752795838483, guid: af10165f5028ebf41aa7fbc4967d2469, type: 3}
+    count: 2
+  - tag: B3
+    bullet: {fileID: 8966347203775545732, guid: e4b1478c1f6ee8a4cb40f565190f5cdc, type: 3}
+    count: 2
+  - tag: B4
+    bullet: {fileID: -5470089654963551750, guid: a9e1156f2a587d04da2ed379d1749263, type: 3}
+    count: 2
+  - tag: Bomb
+    bullet: {fileID: 4927779967415945043, guid: ae92862af8c49304da61ed0a8b22a92a, type: 3}
+    count: 1
 --- !u!1 &2600555012888069859
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,6 +190,7 @@ Transform:
   - {fileID: 6741047169301259285}
   - {fileID: 871340800785471950}
   - {fileID: 8633531791148596311}
+  - {fileID: 3657782006233945968}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -4,21 +4,31 @@ using UnityEngine;
 
 public class NoelNissen2_0 : EnemyBullet
 {
+    [SerializeField] BulletPool B;
     Rigidbody2D Rigid;
     [SerializeField] float Force;
     [SerializeField] GameObject Child;
-    private void Start()
+    protected override IEnumerator Doing()
+    {
+        Rigid.AddRelativeForce(Vector2.right * Force);
+        while (true)
+        {
+            transform.Translate(Speed * Time.deltaTime, 0, 0);
+            yield return 0;
+        }
+    }
+    private void Awake()
     {
         Rigid = GetComponent<Rigidbody2D>();
-        Rigid.AddRelativeForce(Vector2.right * Force);
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("TriggerWall"))
         {
+            //! 錯誤待修補
             for (int x = 0; x < 16; x++)
-                Instantiate(Child, transform.position, Quaternion.Euler(0, 0, transform.eulerAngles.z + x * 22.5f));
-            Destroy(this.gameObject);
+                B.OutBullet("Child", transform.position, Quaternion.Euler(0, 0, transform.eulerAngles.z + x * 22.5f));
+            gameObject.SetActive(false);
         }
     }
 }

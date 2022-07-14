@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class KenzuShioka3_1 : EnemyBullet
 {
-
-    private void Start()
-    {
-        StartCoroutine(Go());
-    }
-    IEnumerator Go()
+    protected override IEnumerator Doing()
     {
         yield return new WaitForSeconds(3);
         while (true)

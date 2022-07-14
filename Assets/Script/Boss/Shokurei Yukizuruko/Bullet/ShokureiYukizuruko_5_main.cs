@@ -5,12 +5,11 @@ using UnityEngine;
 public class ShokureiYukizuruko_5_main : EnemyBullet
 {
     Player GetPlayer;
-    private void Start()
+    private void Awake()
     {
         GetPlayer = GameRunSO.Player.GetComponent<Player>();
-        StartCoroutine(Go());
     }
-    IEnumerator Go()
+    protected override IEnumerator Doing()
     {
         GetPlayer.ResetPoint = transform.position;
         for (float t = 0; t < 7; t += Time.deltaTime)
@@ -24,6 +23,5 @@ public class ShokureiYukizuruko_5_main : EnemyBullet
             transform.Rotate(0, 0, 50 * Time.deltaTime);
             yield return 0;
         }
-        Destroy(this.gameObject);
     }
 }

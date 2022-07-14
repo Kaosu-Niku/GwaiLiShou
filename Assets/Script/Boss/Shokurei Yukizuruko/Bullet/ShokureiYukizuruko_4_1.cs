@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShokureiYukizuruko_4_1 : EnemyBullet
 {
-    private void Start()
+    protected override IEnumerator Doing()
     {
         int r = Random.Range(0, 5);
         Speed += r * 0.5f;
@@ -17,7 +17,11 @@ public class ShokureiYukizuruko_4_1 : EnemyBullet
             case 1: transform.position = new Vector3(-4.5f, y, 0); transform.rotation = Quaternion.Euler(0, 0, 315 + Random.Range(-10, 11)); break;
             case 2: transform.position = new Vector3(4.5f, y, 0); transform.rotation = Quaternion.Euler(0, 0, 225 + Random.Range(-10, 11)); break;
         }
-        StartCoroutine(Move());
+        while (true)
+        {
+            transform.Translate(Speed * Time.deltaTime, 0, 0);
+            yield return 0;
+        }
     }
     new void OnTriggerEnter2D(Collider2D other)
     {
@@ -28,14 +32,6 @@ public class ShokureiYukizuruko_4_1 : EnemyBullet
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("TriggerWall"))
-            Destroy(this.gameObject);
-    }
-    IEnumerator Move()
-    {
-        while (true)
-        {
-            transform.Translate(Speed * Time.deltaTime, 0, 0);
-            yield return 0;
-        }
+            gameObject.SetActive(false);
     }
 }

@@ -2,37 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBullet : MonoBehaviour
+public abstract class EnemyBullet : BulletSystem
 {
-    [SerializeField] protected float Speed; //* 子彈移動速度
-    [SerializeField] bool DontDestroy; //* 子彈是否要被正常刪除(若非正常需在子腳本自訂刪除)
-    [SerializeField] float DestroyTime; //* 刪除時間
-    bool IsGraze = false;//* 是否擦彈
-    protected void Awake()
+    protected abstract IEnumerator Doing();
+    protected override IEnumerator FirstDoing()
     {
-        if (DontDestroy == false)
-            Destroy(this.gameObject, DestroyTime);
+        yield return StartCoroutine(Doing());
     }
+    [SerializeField] protected float Speed; //* 子彈移動速度
+    [SerializeField] bool NotClear;//* 該子彈是否不能被正常清除
+    bool IsGraze = false;//* 是否擦彈
     private void OnEnable()
     {
-        GameRunSO.PlayerMissClearBulletAction += NowDestroyBullet;
-        GameRunSO.BossDeathClearBulletAction += NowMustDeatroyBullet;
+        GameRunSO.PlayerMissClearBulletAction += NowClearBullet;
+        GameRunSO.BossDeathClearBulletAction += NowMustClearBullet;
     }
     private void OnDisable()
     {
-        GameRunSO.PlayerMissClearBulletAction -= NowDestroyBullet;
-        GameRunSO.BossDeathClearBulletAction -= NowMustDeatroyBullet;
+        GameRunSO.PlayerMissClearBulletAction -= NowClearBullet;
+        GameRunSO.BossDeathClearBulletAction -= NowMustClearBullet;
     }
     protected void OnTriggerEnter2D(Collider2D other)
     {
         //? 離開戰鬥區域
         if (other.gameObject.CompareTag("Wall"))
-            NowDestroyBullet();
+            NowClearBullet();
         //? 玩家接觸就判定玩家中彈
         if (other.gameObject.CompareTag("Player"))
         {
             GameRunSO.PlayerMissTrigger();
-            NowDestroyBullet();
+            NowClearBullet();
             Debug.Log("你中彈了(訊息來自EnemyBullet)");
         }
         //? 擦彈判定
@@ -46,13 +45,22 @@ public class EnemyBullet : MonoBehaviour
             }
         }
     }
-    public void NowDestroyBullet()
+
+    private void NowClearBullet()
     {
-        if (DontDestroy == false)
-            Destroy(this.gameObject);
+        if (NotClear == false)
+            gameObject.SetActive(false);
     }
-    public void NowMustDeatroyBullet()
+    public void CallNowClearBullet()
     {
-        Destroy(this.gameObject);
+        NowClearBullet();
+    }
+    private void NowMustClearBullet()
+    {
+        gameObject.SetActive(false);
+    }
+    public void CallNowMustClearBullet()
+    {
+        NowMustClearBullet();
     }
 }

@@ -5,11 +5,7 @@ using UnityEngine;
 public class ShokureiYukizuruko_5_0 : EnemyBullet
 {
     [SerializeField] float ShootTime;
-    private void Start()
-    {
-        StartCoroutine(Move());
-    }
-    IEnumerator Move()
+    protected override IEnumerator Doing()
     {
         transform.Translate(-3, 0, 0);
         for (float t = 0; t < 3; t += Time.deltaTime)
@@ -23,6 +19,5 @@ public class ShokureiYukizuruko_5_0 : EnemyBullet
             transform.Translate(Speed * Time.deltaTime, 0, 0);
             yield return 0;
         }
-        Destroy(this.gameObject);
     }
 }

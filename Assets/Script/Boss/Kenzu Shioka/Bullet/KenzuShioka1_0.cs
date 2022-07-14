@@ -7,13 +7,9 @@ public class KenzuShioka1_0 : EnemyBullet
     [SerializeField] bool Dir;
     [SerializeField] Transform Middle;
     [SerializeField] GameObject ChildBullet;
-    private void Start()
+    protected override IEnumerator Doing()
     {
         StartCoroutine(Go());
-        StartCoroutine(Go2());
-    }
-    IEnumerator Go()
-    {
         while (true)
         {
             if (Dir == false)
@@ -23,7 +19,7 @@ public class KenzuShioka1_0 : EnemyBullet
             yield return 0;
         }
     }
-    IEnumerator Go2()
+    IEnumerator Go()
     {
         while (true)
         {

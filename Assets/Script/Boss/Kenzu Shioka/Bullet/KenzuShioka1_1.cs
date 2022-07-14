@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class KenzuShioka1_1 : EnemyBullet
 {
-    private void Start()
+    protected override IEnumerator Doing()
     {
         transform.Rotate(0, 0, Random.Range(-5, 6));
-        StartCoroutine(Go());
-    }
-    IEnumerator Go()
-    {
         while (true)
         {
             transform.Translate(Speed * Time.deltaTime, 0, 0);
@@ -21,6 +17,6 @@ public class KenzuShioka1_1 : EnemyBullet
     {
         base.OnTriggerEnter2D(other);
         if (other.gameObject.CompareTag("Enemy"))
-            Destroy(this.gameObject);
+            gameObject.SetActive(false);
     }
 }

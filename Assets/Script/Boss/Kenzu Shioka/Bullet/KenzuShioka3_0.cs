@@ -6,13 +6,9 @@ public class KenzuShioka3_0 : EnemyBullet
 {
     [SerializeField] GameObject Child;
     Transform Pos0, Pos1;
-    private void Start()
+    protected override IEnumerator Doing()
     {
         StartCoroutine(Go());
-        StartCoroutine(Go1());
-    }
-    IEnumerator Go()
-    {
         Pos0 = transform.GetChild(1).transform;
         Pos1 = transform.GetChild(2).transform;
         while (true)
@@ -23,12 +19,12 @@ public class KenzuShioka3_0 : EnemyBullet
             yield return new WaitForSeconds(0.1f);
         }
     }
-    IEnumerator Go1()
+    IEnumerator Go()
     {
         while (transform.position.y > -4.5f)
         {
             yield return 0;
         }
-        Destroy(this.gameObject);
+        gameObject.SetActive(false);
     }
 }

@@ -6,19 +6,14 @@ public class NoelNissen4_0 : EnemyBullet
 {
     [SerializeField] List<GameObject> Child = new List<GameObject>();
     [SerializeField] bool Change;
-    void Start()
-    {
-        StartCoroutine(Go());
-    }
-    IEnumerator Go()
+    protected override IEnumerator Doing()
     {
         if (Change == false)
             for (int x = 0; x < 15; x += 2)
-                Destroy(Child[x]);
+                Child[x].SetActive(false);
         else
             for (int x = 1; x < 14; x += 2)
-                Destroy(Child[x]);
+                Child[x].SetActive(false);
         yield return new WaitForSeconds(10);
-        Destroy(this.gameObject);
     }
 }

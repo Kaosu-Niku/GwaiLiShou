@@ -43,13 +43,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 329524250500206035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0da97d034ce73124298adc1267be7601, type: 3}
+  m_Script: {fileID: 11500000, guid: b362e735353f72d48a23798bb093669a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletMagn: 1
+  MyPool: {fileID: 0}
+  MyTag: 
+  BulletMagn: 0
   Speed: 0
-  DontDestroy: 0
-  DestroyTime: 0.2
+  NotClear: 0
+  ClearTime: 0.5
 --- !u!50 &7051869467556039075
 Rigidbody2D:
   serializedVersion: 4

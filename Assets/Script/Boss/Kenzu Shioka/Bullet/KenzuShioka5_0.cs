@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class KenzuShioka5_0 : EnemyBullet
 {
-    private void Start()
-    {
-        StartCoroutine(Go());
-    }
-    IEnumerator Go()
+    protected override IEnumerator Doing()
     {
         Speed = Random.Range(0.5f, 0.8f);
         while (true)

@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class ShokureiYukizuruko_3_2 : EnemyBullet
 {
-    private void Start()
-    {
-        StartCoroutine(Move());
-    }
-    IEnumerator Move()
+    protected override IEnumerator Doing()
     {
         while (true)
         {

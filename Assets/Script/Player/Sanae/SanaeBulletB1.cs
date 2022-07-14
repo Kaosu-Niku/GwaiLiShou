@@ -6,11 +6,7 @@ public class SanaeBulletB1 : Bullet
 {
     [SerializeField] float RotateSpeed;
     int RotateCount;
-    private void Start()
-    {
-        StartCoroutine(Go());
-    }
-    IEnumerator Go()
+    protected override IEnumerator Doing()
     {
         transform.rotation = Quaternion.Euler(0, 0, 30);
         while (true)
@@ -45,5 +41,4 @@ public class SanaeBulletB1 : Bullet
             yield return 0;
         }
     }
-
 }

@@ -128,10 +128,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7d17cba4e58874da44409b8a221aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyPool: {fileID: 0}
+  MyTag: 
   BulletMagn: 1
   Speed: 5
-  DontDestroy: 1
-  DestroyTime: 0
+  NotClear: 1
 --- !u!50 &4496180565824394000
 Rigidbody2D:
   serializedVersion: 4

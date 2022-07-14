@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class MarisaBulletB0 : Bullet
 {
-    [SerializeField] GameObject ChildBullet;
-    private void Start()
-    {
-        StartCoroutine(Go());
-    }
-    IEnumerator Go()
+    protected override IEnumerator Doing()
     {
         while (true)
         {
@@ -21,7 +16,8 @@ public class MarisaBulletB0 : Bullet
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Instantiate(ChildBullet, transform.position, Quaternion.identity);
+            //! 錯誤待修補 
+            MyPool.OutBullet("這顆子彈", transform.position, Quaternion.identity);
         }
     }
 }
