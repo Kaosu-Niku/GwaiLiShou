@@ -132,7 +132,7 @@ MonoBehaviour:
   MyTag: 
   BulletMagn: 1
   Speed: 0
-  NotClear: 0
+  NotClear: 1
 --- !u!50 &2390580866439299874
 Rigidbody2D:
   serializedVersion: 4

@@ -13,8 +13,23 @@ public class Enemy : MonoBehaviour
 
     protected virtual IEnumerator StartAction()//? 敵人自定義行動
     {
+        Vector3 Left = new Vector3(-3.5f, transform.position.y, 0);
+        Vector3 Right = new Vector3(3.5f, transform.position.y, 0);
         //? 敵人要做的事
-        yield break;
+        while (true)
+        {
+            while (transform.position.x > -3)
+            {
+                transform.position = Vector3.Lerp(transform.position, Left, Time.deltaTime);
+                yield return 0;
+            }
+            while (transform.position.x < 3)
+            {
+                transform.position = Vector3.Lerp(transform.position, Right, Time.deltaTime);
+                yield return 0;
+            }
+            yield return 0;
+        }
     }
     public void Hurt(float damage)
     {
@@ -43,7 +58,7 @@ public class Enemy : MonoBehaviour
         transform.position = FirstPos;
         Invoke("Death", DestroyTime);
         StartCoroutine(StartAction());
-        GetPlayer = GameRunSO.Player.GetComponent<Player>();
+        GetPlayer = GameRunSO.Player;
     }
     protected void OnTriggerEnter2D(Collider2D other)
     {

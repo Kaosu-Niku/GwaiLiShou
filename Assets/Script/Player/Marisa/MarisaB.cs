@@ -26,7 +26,7 @@ public class MarisaB : Player
             {
                 B1.gameObject.SetActive(false);
                 for (int x = 0; x < 5; x++)
-                    GetPool.OutBullet("B0", new Vector3(transform.position.x - 0.4f + x * 0.2f, transform.position.y, 0), Quaternion.identity);
+                    GetPool.OutBullet("B0", new Vector3(transform.position.x - 0.4f + x * 0.2f, transform.position.y, 0), Quaternion.Euler(0, 0, 90));
             }
             yield return new WaitForSeconds(0.1f);
         }

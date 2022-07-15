@@ -22,15 +22,15 @@ public class ReimuB : Player
             if (MyInput.Player.Slow.ReadValue<float>() == 1)//? 集中射擊
             {
                 for (int x = 0; x < 3; x++)
-                    GetPool.OutBullet("B0", new Vector3(transform.position.x - 0.1f, transform.position.y, 0), Quaternion.identity);
-                GetPool.OutBullet("B0", transform.position, Quaternion.identity);
+                    GetPool.OutBullet("B0", new Vector3(transform.position.x - 0.1f, transform.position.y, 0), Quaternion.Euler(0, 0, 90));
+                GetPool.OutBullet("B0", transform.position, Quaternion.Euler(0, 0, 90));
                 for (int x = 0; x < 3; x++)
-                    GetPool.OutBullet("B0", new Vector3(transform.position.x - 0.1f, transform.position.y, 0), Quaternion.identity);
+                    GetPool.OutBullet("B0", new Vector3(transform.position.x - 0.1f, transform.position.y, 0), Quaternion.Euler(0, 0, 90));
             }
             else//? 一般射擊
             {
                 for (int x = 0; x < 7; x++)
-                    GetPool.OutBullet("B0", new Vector3(transform.position.x - 0.6f + x * 0.2f, transform.position.y, 0), Quaternion.identity);
+                    GetPool.OutBullet("B0", new Vector3(transform.position.x - 0.6f + x * 0.2f, transform.position.y, 0), Quaternion.Euler(0, 0, 90));
             }
             yield return new WaitForSeconds(0.1f);
         }

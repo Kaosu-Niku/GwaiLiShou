@@ -19,11 +19,16 @@ public class SanaeA : Player
         {
             if (MyInput.Player.Slow.ReadValue<float>() == 1)//? 集中射擊
             {
-                GetPool.OutBullet("A1", transform.position, Quaternion.identity);
+                GetPool.OutBullet("A1", new Vector3(transform.position.x - 0.5f, transform.position.y + 0.25f, 0), Quaternion.identity);
+                GetPool.OutBullet("A1", new Vector3(transform.position.x - 0.25f, transform.position.y + 0.5f, 0), Quaternion.identity);
+                GetPool.OutBullet("A1", new Vector3(transform.position.x, transform.position.y + 0.75f, 0), Quaternion.identity);
+                GetPool.OutBullet("A1", new Vector3(transform.position.x + 0.25f, transform.position.y + 0.5f, 0), Quaternion.identity);
+                GetPool.OutBullet("A1", new Vector3(transform.position.x + 0.5f, transform.position.y + 0.25f, 0), Quaternion.identity);
             }
             else//? 一般射擊
             {
-                GetPool.OutBullet("A0", transform.position, Quaternion.identity);
+                for (int x = 0; x < 5; x++)
+                    GetPool.OutBullet("A0", transform.position, Quaternion.Euler(0, 0, 50 + x * 20));
             }
             yield return new WaitForSeconds(0.1f);
         }

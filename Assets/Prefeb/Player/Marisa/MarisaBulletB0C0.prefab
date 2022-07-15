@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyPool: {fileID: 0}
   MyTag: 
-  BulletMagn: 0
+  BulletMagn: 1
   Speed: 0
   NotClear: 0
   ClearTime: 0.5

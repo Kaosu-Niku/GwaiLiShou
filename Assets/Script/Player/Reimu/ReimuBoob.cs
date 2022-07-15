@@ -13,7 +13,6 @@ public class ReimuBoob : Bullet
     protected override IEnumerator Doing()
     {
         yield return 0;
-
         for (float t = 0; t < 4; t += Time.deltaTime)
         {
             transform.position = player.transform.position;
@@ -46,12 +45,12 @@ public class ReimuBoob : Bullet
     }
     new void OnTriggerEnter2D(Collider2D other)
     {
-        base.OnTriggerEnter2D(other);
         if (other.gameObject.CompareTag("EnemyBullet"))
         {
             EnemyBullet e = other.GetComponent<EnemyBullet>();
             if (e)
                 e.CallNowClearBullet();
         }
+        base.OnTriggerEnter2D(other);
     }
 }

@@ -8,7 +8,7 @@ public class ReimuBulletB0 : Bullet
     {
         while (true)
         {
-            transform.Translate(0, Speed * Time.deltaTime, 0);
+            transform.Translate(Speed * Time.deltaTime, 0, 0);
             yield return 0;
         }
     }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MarisaBulletB0 : Bullet
+public class SanaeBulletA0 : Bullet
 {
     protected override IEnumerator Doing()
     {
@@ -16,7 +16,7 @@ public class MarisaBulletB0 : Bullet
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            MyPool.OutBullet("B0C0", transform.position, Quaternion.identity);
+            MyPool.OutBullet("A0C0", transform.position, Quaternion.identity);
         }
         base.OnTriggerEnter2D(other);
     }

@@ -132,7 +132,7 @@ MonoBehaviour:
   MyTag: 
   BulletMagn: 1
   Speed: 0
-  NotClear: 0
+  NotClear: 1
   RotateSpeed: 500
 --- !u!50 &3423755022495681676
 Rigidbody2D:

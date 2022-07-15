@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SetAllBullet:
   - tag: A0
-    bullet: {fileID: 1591489252329025587, guid: 078328c22d4a24c4797189fad23f2038, type: 3}
+    bullet: {fileID: -1693721141661359216, guid: 078328c22d4a24c4797189fad23f2038, type: 3}
     count: 10
   - tag: A0C0
     bullet: {fileID: 3606653475014146632, guid: 2b723aa633ba7e04281628d0efff9c7f, type: 3}

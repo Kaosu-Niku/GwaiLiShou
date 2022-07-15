@@ -328,7 +328,7 @@ MonoBehaviour:
   - {fileID: -6984218899485420232, guid: c51ce7f4259404b44999a23a8b6c1f62, type: 3}
   - {fileID: 3567444720704779392, guid: 893aff63002018e43b709fbdf592a271, type: 3}
   "\u6539\u8B8A\u904B\u884C\u6642\u9593": 1
-  "\u9810\u8A2D\u73A9\u5BB6": 0
+  "\u9810\u8A2D\u73A9\u5BB6": 5
 --- !u!4 &573481757
 Transform:
   m_ObjectHideFlags: 0

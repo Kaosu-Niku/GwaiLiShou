@@ -1,15 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SanaeB : Player
 {
     BulletSystem Bomb;
-    BulletSystem B1;
-    BulletSystem B2;
-    BulletSystem B3;
-    BulletSystem B4;
-    float StoreTime; //* 慢速射擊充能時間
     protected override void CustomUseBomb()
     {
         Bomb.gameObject.SetActive(true);
@@ -20,57 +16,50 @@ public class SanaeB : Player
     }
     IEnumerator ShootIEnum()
     {
-        StartCoroutine(StoreShoot());
-        while (MyInput.Player.Shoot.ReadValue<float>() == 1)
+        while (MyInput.Player.Slow.ReadValue<float>() == 0 && MyInput.Player.Shoot.ReadValue<float>() == 1)
         {
             //? 一般射擊
-            GetPool.OutBullet("B0", transform.position, Quaternion.identity);
+            for (int x = 0; x < 4; x++)
+                GetPool.OutBullet("B0", transform.position, Quaternion.Euler(0, 0, 60 + x * 20));
             yield return new WaitForSeconds(0.1f);
         }
-        yield break;
+    }
+    private void UseStoreShoot(InputAction.CallbackContext context)
+    {
+        StartCoroutine(StoreShoot());
     }
     IEnumerator StoreShoot()
     {
-        if (MyInput.Player.Slow.ReadValue<float>() == 0)
-        {
 
-        }
-        if (MyInput.Player.Slow.ReadValue<float>() == 1)//? 集中射擊蓄力中
+        float storeTime = 0;
+        while (MyInput.Player.Slow.ReadValue<float>() == 1 && MyInput.Player.Shoot.ReadValue<float>() == 1)//? 集中射擊蓄力中
         {
-            StoreTime += Time.deltaTime;
-            if (StoreTime > 1)
+            storeTime += Time.deltaTime;
+            if (storeTime > 1)
             {
-                B4.gameObject.SetActive(true);
-                StoreTime = 0;
+                GetPool.OutBullet("B4", transform.position, Quaternion.identity);
+                storeTime = 0;
             }
             yield return 0;
         }
+        if (storeTime < 0.2f) { }//? 集中射擊各階段
+        else if (storeTime < 0.4f)
+            GetPool.OutBullet("B1", transform.position, Quaternion.Euler(0, 0, 30));
+        else if (storeTime < 0.6f)
+            GetPool.OutBullet("B2", transform.position, Quaternion.Euler(0, 0, 30));
+        else if (storeTime < 0.8f)
+            GetPool.OutBullet("B3", transform.position, Quaternion.Euler(0, 0, 30));
         else
-        {
-            if (StoreTime < 0.2f) { }//? 集中射擊各階段
-            else if (StoreTime < 0.4f)
-                B1.gameObject.SetActive(true);
-            else if (StoreTime < 0.6f)
-                B2.gameObject.SetActive(true);
-            else if (StoreTime < 0.8f)
-                B3.gameObject.SetActive(true);
-            else
-                B4.gameObject.SetActive(true);
-            StoreTime = 0;
-        }
-        yield return 0;
+            GetPool.OutBullet("B4", transform.position, Quaternion.Euler(0, 0, 30));
     }
     private void Start()
     {
         Bomb = GetPool.OutBullet("Bomb", transform.position, Quaternion.identity);
         Bomb.gameObject.SetActive(false);
-        B1 = GetPool.OutBullet("B1", transform.position, Quaternion.identity);
-        B1.gameObject.SetActive(false);
-        B2 = GetPool.OutBullet("B2", transform.position, Quaternion.identity);
-        B2.gameObject.SetActive(false);
-        B3 = GetPool.OutBullet("B3", transform.position, Quaternion.identity);
-        B3.gameObject.SetActive(false);
-        B4 = GetPool.OutBullet("B4", transform.position, Quaternion.identity);
-        B4.gameObject.SetActive(false);
+        MyInput.Player.Slow.performed += UseStoreShoot;
+    }
+    private void OnDestroy()
+    {
+        MyInput.Player.Slow.performed -= UseStoreShoot;
     }
 }

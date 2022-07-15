@@ -4,37 +4,35 @@ using UnityEngine;
 
 public class SanaeBoom : Bullet
 {
+    Player player;
     Collider2D Col;
     Coroutine C;
     private void Awake()
     {
         Col = GetComponent<Collider2D>();
+        player = GameRunSO.Player;
     }
     protected override IEnumerator Doing()
     {
+        transform.position = player.transform.position;
         Col.enabled = false;
         yield return new WaitForSeconds(4);
-        Col.enabled = true;
-        yield return new WaitForSeconds(2);
-    }
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
+        for (int x = 0; x < 20; x++)
         {
-            if (C == null)
-                C = StartCoroutine(ColClose());
+            Col.enabled = true;
+            yield return new WaitForSeconds(0.1f);
+            Col.enabled = false;
+            yield return 0;
         }
+    }
+    new void OnTriggerEnter2D(Collider2D other)
+    {
         if (other.gameObject.CompareTag("EnemyBullet"))
         {
             EnemyBullet e = other.GetComponent<EnemyBullet>();
             if (e)
                 e.CallNowClearBullet();
         }
-    }
-    IEnumerator ColClose()
-    {
-        Col.enabled = false;
-        yield return new WaitForSeconds(0.1f);
-        Col.enabled = true;
+        base.OnTriggerEnter2D(other);
     }
 }

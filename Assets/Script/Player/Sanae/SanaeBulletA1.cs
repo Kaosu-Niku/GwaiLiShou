@@ -13,6 +13,7 @@ public class SanaeBulletA1 : Bullet
     protected override IEnumerator Doing()
     {
         Col.enabled = false;
+        TriggerCol.enabled = true;
         for (float t = 0; t < 5; t += Time.deltaTime)
         {
             transform.Translate(0, Speed * Time.deltaTime, 0);
