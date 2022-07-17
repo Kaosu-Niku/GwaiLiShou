@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &356839677359945495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8646119147510900140}
+  m_Layer: 0
+  m_Name: ShootPos3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8646119147510900140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356839677359945495}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.25, y: 0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2817190866568218774}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1980240057142574416
 GameObject:
   m_ObjectHideFlags: 0
@@ -47,6 +77,36 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.2
+--- !u!1 &2342936829497173738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1424326675268518913}
+  m_Layer: 0
+  m_Name: ShootPos4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1424326675268518913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2342936829497173738}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.75, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2817190866568218774}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2817190866568218775
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,6 +142,10 @@ Transform:
   - {fileID: 3862045758661286634}
   - {fileID: 4978810719342676135}
   - {fileID: 4632669751759744659}
+  - {fileID: 1251601801542657563}
+  - {fileID: 6516124845177264365}
+  - {fileID: 8646119147510900140}
+  - {fileID: 1424326675268518913}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102,6 +166,10 @@ MonoBehaviour:
   GetPool: {fileID: 249492912261644256}
   ResetPoint: {x: 0, y: -3.5, z: 0}
   AllClip: []
+  ShootPos1: {fileID: 1251601801542657563}
+  ShootPos2: {fileID: 6516124845177264365}
+  ShootPos3: {fileID: 8646119147510900140}
+  ShootPos4: {fileID: 1424326675268518913}
 --- !u!50 &1598011206
 Rigidbody2D:
   serializedVersion: 4
@@ -317,6 +385,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &3525198686776664306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6516124845177264365}
+  m_Layer: 0
+  m_Name: ShootPos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6516124845177264365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3525198686776664306}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.25, y: 0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2817190866568218774}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3806256679197847107
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,9 +462,33 @@ MonoBehaviour:
   - tag: B0
     bullet: {fileID: 4908803858080689698, guid: aeca51585878dde4296c7b64d29450fe, type: 3}
     count: 10
+  - tag: BombC0
+    bullet: {fileID: 7953113618228420822, guid: 295f188ee55242b40a9d7a8ecf2b10a8, type: 3}
+    count: 8
   - tag: Bomb
     bullet: {fileID: 6329072730846220460, guid: 303d76198837b91419b88b40beb7dd53, type: 3}
-    count: 8
+    count: 1
+  - tag: Bomb1
+    bullet: {fileID: 6329072730846220460, guid: 728783b6bc9493c409a8f5381f0b6cfa, type: 3}
+    count: 1
+  - tag: Bomb2
+    bullet: {fileID: 6329072730846220460, guid: 018e2477a2de5394ca6103e40a005ba0, type: 3}
+    count: 1
+  - tag: Bomb3
+    bullet: {fileID: 6329072730846220460, guid: 2fae592e90fcc1b47a90b0965e9bb478, type: 3}
+    count: 1
+  - tag: Bomb4
+    bullet: {fileID: 6329072730846220460, guid: c3fa025b591dca74aa9337f84c658f54, type: 3}
+    count: 1
+  - tag: Bomb5
+    bullet: {fileID: 6329072730846220460, guid: 982ee7b926a3f52428614949a7fd8b38, type: 3}
+    count: 1
+  - tag: Bomb6
+    bullet: {fileID: 6329072730846220460, guid: 3853e3706b3c9f04c8287f0063a4c9b5, type: 3}
+    count: 1
+  - tag: Bomb7
+    bullet: {fileID: 6329072730846220460, guid: 29daac48b81c47349abd5d3f0355bc7b, type: 3}
+    count: 1
 --- !u!1 &5792795260536279240
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,3 +536,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
+--- !u!1 &8879070113637242823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1251601801542657563}
+  m_Layer: 0
+  m_Name: ShootPos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1251601801542657563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8879070113637242823}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.75, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2817190866568218774}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

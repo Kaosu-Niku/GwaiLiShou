@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hp: 999999
-  FirstPos: {x: 0, y: 0, z: 0}
+  FirstPos: {x: 0, y: 4, z: 0}
   Speed: 0
   DestroyTime: 999
   Score: 0

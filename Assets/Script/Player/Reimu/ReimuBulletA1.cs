@@ -12,7 +12,6 @@ public class ReimuBulletA1 : Bullet
     }
     protected override IEnumerator Doing()
     {
-        Col.enabled = true;
         TheEnemy = GameRunSO.GetFirstEnemy();
         transform.rotation = Quaternion.Euler(0, 0, 90);
         StartCoroutine(Go());
@@ -21,16 +20,17 @@ public class ReimuBulletA1 : Bullet
             Vector3 dir = TheEnemy.transform.position - transform.position;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            transform.Translate(Speed * Time.deltaTime, 0, 0);
+            transform.position = Vector3.Lerp(transform.position, TheEnemy.transform.position, 3 * Time.deltaTime);
             yield return 0;
         }
     }
     IEnumerator Go()
     {
+        Col.enabled = true;
         while (true)
         {
             Col.enabled = true;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.2f);
             Col.enabled = false;
             yield return 0;
         }
