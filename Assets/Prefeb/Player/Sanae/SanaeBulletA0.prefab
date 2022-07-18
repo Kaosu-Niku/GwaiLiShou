@@ -49,7 +49,7 @@ MonoBehaviour:
   MyPool: {fileID: 0}
   MyTag: 
   BulletMagn: 1
-  Speed: 10
+  Speed: 5
   NotClear: 0
 --- !u!50 &8311932348459693245
 Rigidbody2D:

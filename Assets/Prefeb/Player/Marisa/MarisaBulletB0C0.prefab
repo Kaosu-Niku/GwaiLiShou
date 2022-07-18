@@ -51,7 +51,7 @@ MonoBehaviour:
   BulletMagn: 1
   Speed: 0
   NotClear: 0
-  ClearTime: 0.5
+  ClearTime: 0.1
 --- !u!50 &6933752074658092828
 Rigidbody2D:
   serializedVersion: 4
