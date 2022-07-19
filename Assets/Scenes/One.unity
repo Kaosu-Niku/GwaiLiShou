@@ -328,7 +328,7 @@ MonoBehaviour:
   - {fileID: -6984218899485420232, guid: c51ce7f4259404b44999a23a8b6c1f62, type: 3}
   - {fileID: 3567444720704779392, guid: 893aff63002018e43b709fbdf592a271, type: 3}
   "\u6539\u8B8A\u904B\u884C\u6642\u9593": 1
-  "\u9810\u8A2D\u73A9\u5BB6": 4
+  "\u9810\u8A2D\u73A9\u5BB6": 5
 --- !u!4 &573481757
 Transform:
   m_ObjectHideFlags: 0
@@ -888,21 +888,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1661519046, guid: 322d8f919435e9a40a05f5474f3831d2, type: 3}
-      propertyPath: AllEnemy.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1661519046, guid: 322d8f919435e9a40a05f5474f3831d2, type: 3}
       propertyPath: AllEnemy.Array.data[1]
       value: 
-      objectReference: {fileID: 8776245522736455634, guid: 468fd4ca425f56d46a61000eb29f249b, type: 3}
-    - target: {fileID: 1661519046, guid: 322d8f919435e9a40a05f5474f3831d2, type: 3}
-      propertyPath: AllEnemyTime.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1661519046, guid: 322d8f919435e9a40a05f5474f3831d2, type: 3}
-      propertyPath: AllEnemyTime.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8776245522736455634, guid: aea045d1767646e4e9e0b0332dea8cc4, type: 3}
     - target: {fileID: 2531908993988305411, guid: 322d8f919435e9a40a05f5474f3831d2, type: 3}
       propertyPath: m_Name
       value: Canvas_first

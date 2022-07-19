@@ -18,16 +18,16 @@ public class Enemy : MonoBehaviour
         //? 敵人要做的事
         while (true)
         {
-            // while (transform.position.x > -3)
-            // {
-            //     transform.position = Vector3.Lerp(transform.position, Left, Time.deltaTime);
-            //     yield return 0;
-            // }
-            // while (transform.position.x < 3)
-            // {
-            //     transform.position = Vector3.Lerp(transform.position, Right, Time.deltaTime);
-            //     yield return 0;
-            // }
+            while (transform.position.x > -3)
+            {
+                transform.position = Vector3.Lerp(transform.position, Left, Time.deltaTime);
+                yield return 0;
+            }
+            while (transform.position.x < 3)
+            {
+                transform.position = Vector3.Lerp(transform.position, Right, Time.deltaTime);
+                yield return 0;
+            }
             yield return 0;
         }
     }

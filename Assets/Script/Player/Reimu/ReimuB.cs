@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class ReimuB : Player
 {
-    [SerializeField] Transform ShootPos1;
-    [SerializeField] Transform ShootPos2;
-    [SerializeField] Transform ShootPos3;
-    [SerializeField] Transform ShootPos4;
+    [SerializeField] Transform[] ShootPos = new Transform[8];
+    Coroutine C;
     protected override void CustomUseBomb()
     {
         GetPool.OutBullet("Bomb", transform.position, Quaternion.Euler(0, 0, 0));
@@ -29,25 +27,52 @@ public class ReimuB : Player
         {
             if (MyInput.Player.Slow.ReadValue<float>() == 1)//? 集中射擊
             {
-                for (int x = 0; x < 3; x++)
-                    GetPool.OutBullet("B0", new Vector3(transform.position.x - 0.1f, transform.position.y, 0), Quaternion.Euler(0, 0, 90));
-                GetPool.OutBullet("B0", transform.position, Quaternion.Euler(0, 0, 90));
-                for (int x = 0; x < 3; x++)
-                    GetPool.OutBullet("B0", new Vector3(transform.position.x - 0.1f, transform.position.y, 0), Quaternion.Euler(0, 0, 90));
+                if (C != null)
+                    StopCoroutine(C);
+                C = StartCoroutine(ClosePos());
+                for (int x = 0; x < 8; x++)
+                    GetPool.OutBullet("B0", ShootPos[x].position, Quaternion.Euler(0, 0, 90));
+                yield return new WaitForSeconds(0.075f);
             }
             else//? 一般射擊
             {
-                for (int x = 0; x < 2; x++)
-                    GetPool.OutBullet("B0", ShootPos1.position, Quaternion.Euler(0, 0, 90));
-                for (int x = 0; x < 2; x++)
-                    GetPool.OutBullet("B0", ShootPos2.position, Quaternion.Euler(0, 0, 90));
-                for (int x = 0; x < 2; x++)
-                    GetPool.OutBullet("B0", ShootPos3.position, Quaternion.Euler(0, 0, 90));
-                for (int x = 0; x < 2; x++)
-                    GetPool.OutBullet("B0", ShootPos4.position, Quaternion.Euler(0, 0, 90));
+                if (C != null)
+                    StopCoroutine(C);
+                C = StartCoroutine(OpenPos());
+                for (int x = 0; x < 8; x += 2)
+                    GetPool.OutBullet("B0", ShootPos[x].position, Quaternion.Euler(0, 0, 92.5f));
+                for (int x = 1; x < 8; x += 2)
+                    GetPool.OutBullet("B0", ShootPos[x].position, Quaternion.Euler(0, 0, 87.5f));
+                yield return new WaitForSeconds(0.1f);
             }
-            yield return new WaitForSeconds(0.1f);
+
         }
         yield break;
+    }
+    IEnumerator OpenPos()
+    {
+        Vector3[] pos = new Vector3[8] { new Vector3(-0.8f, 0.25f, 0), new Vector3(-0.7f, 0.25f, 0), new Vector3(-0.3f, 0.5f, 0), new Vector3(-0.2f, 0.5f, 0),
+        new Vector3(0.2f, 0.5f, 0), new Vector3(0.3f, 0.5f, 0), new Vector3(0.7f, 0.25f, 0), new Vector3(0.8f, 0.25f, 0)};
+        for (float x = 0; x < 1; x += Time.deltaTime)
+        {
+            for (int y = 0; y < 8; y++)
+            {
+                ShootPos[y].localPosition = Vector3.Lerp(ShootPos[y].localPosition, pos[y], Time.deltaTime * 10);
+            }
+            yield return 0;
+        }
+    }
+    IEnumerator ClosePos()
+    {
+        Vector3[] pos = new Vector3[8] { new Vector3(-0.35f, 0.25f, 0), new Vector3(-0.25f, 0.25f, 0), new Vector3(-0.15f, 0.5f, 0), new Vector3(-0.05f, 0.5f, 0) ,
+        new Vector3(0.05f, 0.5f, 0), new Vector3(0.15f, 0.5f, 0),new Vector3(0.25f, 0.25f, 0), new Vector3(0.35f, 0.25f, 0)};
+        for (float x = 0; x < 1; x += Time.deltaTime)
+        {
+            for (int y = 0; y < 8; y++)
+            {
+                ShootPos[y].localPosition = Vector3.Lerp(ShootPos[y].localPosition, pos[y], Time.deltaTime * 10);
+            }
+            yield return 0;
+        }
     }
 }

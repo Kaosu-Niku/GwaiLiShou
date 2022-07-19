@@ -70,7 +70,9 @@ MonoBehaviour:
   - {fileID: 3567444720704779392, guid: 893aff63002018e43b709fbdf592a271, type: 3}
   AllEnemy:
   - {fileID: 8776245522736455634, guid: 468fd4ca425f56d46a61000eb29f249b, type: 3}
+  - {fileID: 8776245522736455634, guid: 468fd4ca425f56d46a61000eb29f249b, type: 3}
   AllEnemyTime:
+  - 1
   - 1
 --- !u!114 &1661519042
 MonoBehaviour:

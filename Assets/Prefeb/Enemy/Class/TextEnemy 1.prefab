@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8776245522736455628}
   - component: {fileID: 2586650574727216870}
   m_Layer: 0
-  m_Name: TextEnemy
+  m_Name: TextEnemy 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hp: 999999
-  FirstPos: {x: -2, y: 2, z: 0}
+  FirstPos: {x: 2, y: 2, z: 0}
   Speed: 0
   DestroyTime: 999
   Score: 0
