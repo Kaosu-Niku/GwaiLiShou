@@ -150,42 +150,42 @@ public class GameUI : MonoBehaviour
     private void OnEnable()
     {
         GameRunSO.ChangeMusicAction += ChangeMusic;
-        GameRunSO.ChangeScoreAction += ChangeScoreText;
-        GameRunSO.ChangePowerAction += ChangePowerText;
-        GameRunSO.ChangePointAction += ChangePointText;
-        GameRunSO.ChangeGrazeAction += ChangeGrazeText;
-        GameRunSO.ChangeHpImageAction += ChangeHpImage;
-        GameRunSO.ChangeBombImageAction += ChangeBombImage;
-        GameRunSO.ChangeSkillImageAction += ChangeSkillImage;
-        GameRunSO.OpenStopPanelAction += OpenStopPanel;
-        GameRunSO.OpenDeathPanelAction += OpenDeathPanel;
-        GameRunSO.UseTalkPanelAction += UseTalkPanel;
-        GameRunSO.OpenAllBossUIAction += OpenAllBossUI;
-        GameRunSO.CloseAllBossUIAction += CloseAllBossUI;
-        GameRunSO.ChangeBossNameTextAction += ChangeBossNameText;
-        GameRunSO.ChangeCardNameTextAction += ChangeCardNameText;
-        GameRunSO.ChangeCardTimeTextAction += ChangeCardTimeText;
-        GameRunSO.ChangeBossHpSliderAction += ChangeBossHpSlider;
+        GameUiSO.ChangeScoreAction += ChangeScoreText;
+        GameUiSO.ChangePowerAction += ChangePowerText;
+        GameUiSO.ChangePointAction += ChangePointText;
+        GameUiSO.ChangeGrazeAction += ChangeGrazeText;
+        GameUiSO.ChangeHpImageAction += ChangeHpImage;
+        GameUiSO.ChangeBombImageAction += ChangeBombImage;
+        GameUiSO.ChangeSkillImageAction += ChangeSkillImage;
+        GameUiSO.OpenStopPanelAction += OpenStopPanel;
+        GameUiSO.OpenDeathPanelAction += OpenDeathPanel;
+        GameUiSO.UseTalkPanelAction += UseTalkPanel;
+        GameUiSO.OpenAllBossUIAction += OpenAllBossUI;
+        GameUiSO.CloseAllBossUIAction += CloseAllBossUI;
+        GameUiSO.ChangeBossNameTextAction += ChangeBossNameText;
+        GameUiSO.ChangeCardNameTextAction += ChangeCardNameText;
+        GameUiSO.ChangeCardTimeTextAction += ChangeCardTimeText;
+        GameUiSO.ChangeBossHpSliderAction += ChangeBossHpSlider;
     }
     private void OnDisable()
     {
         GameRunSO.ChangeMusicAction -= ChangeMusic;
-        GameRunSO.ChangeScoreAction -= ChangeScoreText;
-        GameRunSO.ChangePowerAction -= ChangePowerText;
-        GameRunSO.ChangePointAction -= ChangePointText;
-        GameRunSO.ChangeGrazeAction -= ChangeGrazeText;
-        GameRunSO.ChangeHpImageAction -= ChangeHpImage;
-        GameRunSO.ChangeBombImageAction -= ChangeBombImage;
-        GameRunSO.ChangeSkillImageAction -= ChangeSkillImage;
-        GameRunSO.OpenStopPanelAction -= OpenStopPanel;
-        GameRunSO.OpenDeathPanelAction -= OpenDeathPanel;
-        GameRunSO.UseTalkPanelAction -= UseTalkPanel;
-        GameRunSO.OpenAllBossUIAction -= OpenAllBossUI;
-        GameRunSO.CloseAllBossUIAction -= CloseAllBossUI;
-        GameRunSO.ChangeBossNameTextAction -= ChangeBossNameText;
-        GameRunSO.ChangeCardNameTextAction -= ChangeCardNameText;
-        GameRunSO.ChangeCardTimeTextAction -= ChangeCardTimeText;
-        GameRunSO.ChangeBossHpSliderAction -= ChangeBossHpSlider;
+        GameUiSO.ChangeScoreAction -= ChangeScoreText;
+        GameUiSO.ChangePowerAction -= ChangePowerText;
+        GameUiSO.ChangePointAction -= ChangePointText;
+        GameUiSO.ChangeGrazeAction -= ChangeGrazeText;
+        GameUiSO.ChangeHpImageAction -= ChangeHpImage;
+        GameUiSO.ChangeBombImageAction -= ChangeBombImage;
+        GameUiSO.ChangeSkillImageAction -= ChangeSkillImage;
+        GameUiSO.OpenStopPanelAction -= OpenStopPanel;
+        GameUiSO.OpenDeathPanelAction -= OpenDeathPanel;
+        GameUiSO.UseTalkPanelAction -= UseTalkPanel;
+        GameUiSO.OpenAllBossUIAction -= OpenAllBossUI;
+        GameUiSO.CloseAllBossUIAction -= CloseAllBossUI;
+        GameUiSO.ChangeBossNameTextAction -= ChangeBossNameText;
+        GameUiSO.ChangeCardNameTextAction -= ChangeCardNameText;
+        GameUiSO.ChangeCardTimeTextAction -= ChangeCardTimeText;
+        GameUiSO.ChangeBossHpSliderAction -= ChangeBossHpSlider;
     }
     private void Start()
     {

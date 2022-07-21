@@ -13,11 +13,11 @@ public abstract class BulletSystem : MonoBehaviour
         yield return StartCoroutine(FirstDoing());
         gameObject.SetActive(false);
     }
-    private void OnEnable()
+    protected void OnEnable()
     {
         C = StartCoroutine(Do());
     }
-    private void OnDisable()
+    protected void OnDisable()
     {
         if (C != null)
         {

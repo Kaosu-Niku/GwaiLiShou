@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b90fe9603aaf954bb8e060390c0eb4e, type: 3}
+  m_Name: S1_Lunatic
+  m_EditorClassIdentifier: 
+  _AllEnemyData:
+  - Who: {fileID: 3974083728492481671, guid: 02d8d3e88b1905f488b91a77ae06ad8f, type: 3}
+    StartTime: 1
+    StartPos: {x: 0, y: 3}

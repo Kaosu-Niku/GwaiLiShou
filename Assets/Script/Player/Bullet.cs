@@ -26,10 +26,10 @@ public abstract class Bullet : BulletSystem
             {
                 Enemy e = other.GetComponent<Enemy>();
                 if (e)
-                    e.Hurt(BulletAttack);
+                    e.CallHurt(BulletAttack);
                 Boss b = other.GetComponent<Boss>();
                 if (b)
-                    b.Hurt(BulletAttack);
+                    b.CallHurt(BulletAttack);
             }
             finally
             {
@@ -38,9 +38,11 @@ public abstract class Bullet : BulletSystem
             }
         }
     }
-    protected void Start()
+    new void OnEnable()
     {
+        base.OnEnable();
         //? 子彈總攻擊力
         BulletAttack = (GameDataSO.PlayerPower + GameDataSO.PlayerSkillPower) * BulletMagn;
     }
+
 }

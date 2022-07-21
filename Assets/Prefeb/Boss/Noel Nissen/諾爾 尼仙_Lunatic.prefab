@@ -48,10 +48,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad06aaf9275d87488757664a98f80e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Hp: 0
+  Speed: 0
+  Score: 0
+  UseStop: 0
   "\u6307\u5B9A\u56DE\u5408": 0
   BossChineseName: "\u8AFE\u723E \u5C3C\u4ED9"
   BossEnglishName: Noel Nissen
   BossJapaneseName: "\u8AFE\u723E \u5C3C\u4ED9"
+  AllBossStage:
+  - Hp: 1000
+    LimitTime: 42
+    KillScore: 100000
+    CardChineseName: 
+    CardEnglishName: 
+    CardJapaneseName: 
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: "\u8CDC\u798F\u300C\u795E\u4E4B\u6069\u5178\u300D"
+    CardEnglishName: "\u8CDC\u798F\u300C\u795E\u4E4B\u6069\u5178\u300D"
+    CardJapaneseName: "\u8CDC\u798F\u300C\u795E\u4E4B\u6069\u5178\u300D"
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: 
+    CardEnglishName: 
+    CardJapaneseName: 
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: "\u6975\u5149\u300CAurora Borealis\u300D"
+    CardEnglishName: "\u6975\u5149\u300CAurora Borealis\u300D"
+    CardJapaneseName: "\u6975\u5149\u300CAurora Borealis\u300D"
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: 
+    CardEnglishName: 
+    CardJapaneseName: 
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: "\u66B4\u8D70\u300C\u8056\u591C\u4E2D\u7684\u74B0\u7403\u75BE\u884C\u300D"
+    CardEnglishName: "\u66B4\u8D70\u300C\u8056\u591C\u4E2D\u7684\u74B0\u7403\u75BE\u884C\u300D"
+    CardJapaneseName: "\u66B4\u8D70\u300C\u8056\u591C\u4E2D\u7684\u74B0\u7403\u75BE\u884C\u300D"
   Hp:
   - 1000
   - 1000

@@ -35,17 +35,17 @@ public class GameDataSO : ScriptableObject
     public static int PlayerStartHP { get => _playerStartHP; set { if (value >= 0 && value <= 10) _playerStartHP = value; else _playerStartHP = 0; } }
     public static int PlayerStartBomb { get => _playerStartBomb; set { if (value >= 0 && value <= 10) _playerStartBomb = value; else _playerStartBomb = 0; } }
     public static float PlayerStartPower { get => _playerStartPower; set { if (value >= 1 && value <= 5) _playerStartPower = value; else _playerStartPower = 1; } }
-    public static int PlayerHp { get => _playerHp; set { if (value >= 0 && value <= 10) _playerHp = value; else _playerHp = 0; GameRunSO.ChangeHpImageTrigger(); } }
-    public static int PlayerBomb { get => _playerBomb; set { if (value >= 0 && value <= 10) _playerBomb = value; else _playerBomb = 0; GameRunSO.ChangeBombImageTrigger(); } }
-    public static float PlayerSmallHp { get => _playerSmallHp; set { _playerSmallHp = value; while (_playerSmallHp >= 6) { PlayerHp++; _playerSmallHp -= 6; } GameRunSO.ChangeHpImageTrigger(); } }
-    public static float PlayerSmallBomb { get => _playerSmallBomb; set { _playerSmallBomb = value; while (_playerSmallBomb >= 6) { PlayerBomb++; _playerSmallBomb -= 6; } GameRunSO.ChangeBombImageTrigger(); } }
-    public static float PlayerPower { get => _playerPower; set { if (value >= 1 && value <= 5) _playerPower = value; else _playerPower = 1; GameRunSO.ChangePowerTrigger(); } }
+    public static int PlayerHp { get => _playerHp; set { if (value >= 0 && value <= 10) _playerHp = value; else _playerHp = 0; GameUiSO.ChangeHpImageTrigger(); } }
+    public static int PlayerBomb { get => _playerBomb; set { if (value >= 0 && value <= 10) _playerBomb = value; else _playerBomb = 0; GameUiSO.ChangeBombImageTrigger(); } }
+    public static float PlayerSmallHp { get => _playerSmallHp; set { _playerSmallHp = value; while (_playerSmallHp >= 6) { PlayerHp++; _playerSmallHp -= 6; } GameUiSO.ChangeHpImageTrigger(); } }
+    public static float PlayerSmallBomb { get => _playerSmallBomb; set { _playerSmallBomb = value; while (_playerSmallBomb >= 6) { PlayerBomb++; _playerSmallBomb -= 6; } GameUiSO.ChangeBombImageTrigger(); } }
+    public static float PlayerPower { get => _playerPower; set { if (value >= 1 && value <= 5) _playerPower = value; else _playerPower = 1; GameUiSO.ChangePowerTrigger(); } }
     public static float PlayerSkillPower { get => _playerSkillPower; set { _playerSkillPower = value; } }
-    public static float PlayerSkill { get => _playerSkill; set { if (value < 9) _playerSkill = value; else { _playerSkill = 9; } GameRunSO.ChangeSkillImageTrigger(); } }
+    public static float PlayerSkill { get => _playerSkill; set { if (value < 9) _playerSkill = value; else { _playerSkill = 9; } GameUiSO.ChangeSkillImageTrigger(); } }
 
-    public static int Score { get => _score; set { if (value < 999999999) _score = value; else _score = 999999999; GameRunSO.ChangeScoreTrigger(); } }
-    public static int Point { get => _point; set { if (value < 99999) _point = value; else _point = 99999; GameRunSO.ChangePointTrigger(); } }
-    public static int Graze { get => _graze; set { if (value < 9999) _graze = value; else _graze = 9999; GameRunSO.ChangeGrazeTrigger(); } }
+    public static int Score { get => _score; set { if (value < 999999999) _score = value; else _score = 999999999; GameUiSO.ChangeScoreTrigger(); } }
+    public static int Point { get => _point; set { if (value < 99999) _point = value; else _point = 99999; GameUiSO.ChangePointTrigger(); } }
+    public static int Graze { get => _graze; set { if (value < 9999) _graze = value; else _graze = 9999; GameUiSO.ChangeGrazeTrigger(); } }
 
     public static void ChangeGameType(bool t)
     {

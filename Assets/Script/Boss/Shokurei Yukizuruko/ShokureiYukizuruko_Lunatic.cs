@@ -5,12 +5,16 @@ using UnityEngine;
 public class ShokureiYukizuruko_Lunatic : Boss
 {
     GameObject Obj3;
-
-    protected override void NewRoundFirst()
+    protected override void BossResetAction()
     {
-        switch (Round)
+        switch (Stage)
         {
+            case 0: AddBossStartAction(Action00()); break;
+            case 1: AddBossStartAction(Action01()); break;
+            case 2: AddBossStartAction(Action02()); break;
+            case 3: AddBossStartAction(Action03()); AddBossStartAction(Action03_1()); break;
             case 4:
+                AddBossStartAction(Action04());
                 Destroy(Obj3);
                 Instantiate(Bullet[8], new Vector3(0, 0, 0), Quaternion.identity);
                 Instantiate(Bullet[8], new Vector3(0, 0, 0), Quaternion.Euler(0, 0, 180));
@@ -19,30 +23,7 @@ public class ShokureiYukizuruko_Lunatic : Boss
                 break;
         }
     }
-    protected override IEnumerator NewRoundAction()
-    {
-        switch (Round)
-        {
-            case 0:
-                NowAction.Add(StartCoroutine(OneAction()));
-                break;
-            case 1:
-                NowAction.Add(StartCoroutine(TwoAction()));
-                break;
-            case 2:
-                NowAction.Add(StartCoroutine(ThreeAction()));
-                break;
-            case 3:
-                NowAction.Add(StartCoroutine(FourAction()));
-                NowAction.Add(StartCoroutine(FourOneAction()));
-                break;
-            case 4:
-                NowAction.Add(StartCoroutine(FiveAction()));
-                break;
-        }
-        yield break;
-    }
-    IEnumerator OneAction()
+    IEnumerator Action00()
     {
         while (true)
         {
@@ -50,7 +31,7 @@ public class ShokureiYukizuruko_Lunatic : Boss
             yield return new WaitForSeconds(6);
         }
     }
-    IEnumerator TwoAction()
+    IEnumerator Action01()
     {
         while (true)
         {
@@ -59,7 +40,7 @@ public class ShokureiYukizuruko_Lunatic : Boss
             yield return new WaitForSeconds(13);
         }
     }
-    IEnumerator ThreeAction()
+    IEnumerator Action02()
     {
         while (true)
         {
@@ -67,7 +48,7 @@ public class ShokureiYukizuruko_Lunatic : Boss
             yield return new WaitForSeconds(6);
         }
     }
-    IEnumerator FourAction()
+    IEnumerator Action03()
     {
         Reset = new Vector3(0, 0, 0);
         Obj3 = Instantiate(Bullet[5], GameRunSO.Player.transform.position, Quaternion.identity, GameRunSO.Player.transform);
@@ -78,7 +59,7 @@ public class ShokureiYukizuruko_Lunatic : Boss
             yield return new WaitForSeconds(0.1f);
         }
     }
-    IEnumerator FourOneAction()
+    IEnumerator Action03_1()
     {
         while (true)
         {
@@ -90,7 +71,7 @@ public class ShokureiYukizuruko_Lunatic : Boss
             yield return new WaitForSeconds(2);
         }
     }
-    IEnumerator FiveAction()
+    IEnumerator Action04()
     {
         while (true)
         {

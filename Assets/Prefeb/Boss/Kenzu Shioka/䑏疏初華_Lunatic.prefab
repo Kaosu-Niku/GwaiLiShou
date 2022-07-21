@@ -82,6 +82,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &8635504507364611026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8632805020974429693}
+  - component: {fileID: 6824085455220724631}
+  m_Layer: 0
+  m_Name: BulletPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8632805020974429693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8635504507364611026}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8929567178256359080}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6824085455220724631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8635504507364611026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d8c9593b3ef1184182bf4d77904122d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetAllBullet: []
 --- !u!1 &8929567178256359081
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6698152419034456209}
+  - {fileID: 8632805020974429693}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -131,51 +176,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd359ce2c527e04cbd77a4c1fbe0bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "\u6307\u5B9A\u56DE\u5408": 0
-  BossChineseName: "\u444F\u758F\u521D\u83EF"
-  BossEnglishName: Kenzu Shioka
-  BossJapaneseName: "\u444F\u758F\u521D\u83EF"
-  Hp:
-  - 1000
-  - 1000
-  - 1000
-  - 1000
-  - 1000
-  - 1000
-  - 1000
-  CardChineseName:
-  - 
-  - "\u8F9F\u706B\u300C\u444F\u758F\u76AE\u8863\u300D"
-  - 
-  - "\u6454\u7B26\u300CAttitude Adjusting\u300D"
-  - 
-  - "\u70B8\u5F48\u6454\u300CAlexander Last Horseride\u300D"
-  - "\u87BA\u65CB\u300C\u6B21\u5143\u7A81\u7834\u300D"
-  CardEnglishName:
-  - 
-  - "\u8F9F\u706B\u300C\u444F\u758F\u76AE\u8863\u300D"
-  - 
-  - "\u6454\u7B26\u300CAttitude Adjusting\u300D"
-  - 
-  - "\u70B8\u5F48\u6454\u300CAlexander Last Horseride\u300D"
-  - "\u87BA\u65CB\u300C\u6B21\u5143\u7A81\u7834\u300D"
-  CardJapaneseName:
-  - 
-  - "\u8F9F\u706B\u300C\u444F\u758F\u76AE\u8863\u300D"
-  - 
-  - "\u6454\u7B26\u300CAttitude Adjusting\u300D"
-  - 
-  - "\u70B8\u5F48\u6454\u300CAlexander Last Horseride\u300D"
-  - "\u87BA\u65CB\u300C\u6B21\u5143\u7A81\u7834\u300D"
-  LimitTime:
-  - 30
-  - 30
-  - 30
-  - 30
-  - 30
-  - 30
-  - 30
-  KillScore: a0860100a0860100a0860100a0860100a0860100a0860100a0860100
+  Hp: 0
+  Speed: 0
+  Score: 0
+  UseStop: 0
+  GetPool: {fileID: 6824085455220724631}
   Bullet:
   - {fileID: 2472462912425741623, guid: ddd4a2815a947b14db429b8df5e0ad67, type: 3}
   - {fileID: 1781037204562426033, guid: 068b786de7cb45d4298fa24d02134ef4, type: 3}
@@ -187,9 +192,53 @@ MonoBehaviour:
   - {fileID: 7787674556838828258, guid: 0a3ca499f91fc4f498e279313750880c, type: 3}
   - {fileID: 4741736319050743041, guid: b76cdb9bcfa6114468a94d64ecf1f14d, type: 3}
   - {fileID: 4545787254385232599, guid: c3ff68ebb268d704d86165d3f2ab6fb9, type: 3}
-  AllClip:
-  - {fileID: 8300000, guid: 83312171a095e8e41acd49a27a7d85c9, type: 3}
-  - {fileID: 8300000, guid: 1549633ce2e363c4d8589aa2dbee0cad, type: 3}
+  "\u6307\u5B9A\u56DE\u5408": 0
+  BossChineseName: "\u444F\u758F\u521D\u83EF"
+  BossEnglishName: Kenzu Shioka
+  BossJapaneseName: "\u444F\u758F\u521D\u83EF"
+  AllBossStage:
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: 
+    CardEnglishName: 
+    CardJapaneseName: 
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: "\u8F9F\u706B\u300C\u444F\u758F\u76AE\u8863\u300D"
+    CardEnglishName: "\u8F9F\u706B\u300C\u444F\u758F\u76AE\u8863\u300D"
+    CardJapaneseName: "\u8F9F\u706B\u300C\u444F\u758F\u76AE\u8863\u300D"
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: 
+    CardEnglishName: 
+    CardJapaneseName: 
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: "\u6454\u7B26\u300CAttitude Adjusting\u300D"
+    CardEnglishName: "\u6454\u7B26\u300CAttitude Adjusting\u300D"
+    CardJapaneseName: "\u6454\u7B26\u300CAttitude Adjusting\u300D"
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: 
+    CardEnglishName: 
+    CardJapaneseName: 
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: "\u70B8\u5F48\u6454\u300CAlexander Last Horseride\u300D"
+    CardEnglishName: "\u70B8\u5F48\u6454\u300CAlexander Last Horseride\u300D"
+    CardJapaneseName: "\u70B8\u5F48\u6454\u300CAlexander Last Horseride\u300D"
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: "\u87BA\u65CB\u300C\u6B21\u5143\u7A81\u7834\u300D"
+    CardEnglishName: "\u87BA\u65CB\u300C\u6B21\u5143\u7A81\u7834\u300D"
+    CardJapaneseName: "\u87BA\u65CB\u300C\u6B21\u5143\u7A81\u7834\u300D"
   MyCol: {fileID: 8929567178256359095}
   MyCol5: {fileID: 5886346665187584881}
 --- !u!114 &8929567178256359092

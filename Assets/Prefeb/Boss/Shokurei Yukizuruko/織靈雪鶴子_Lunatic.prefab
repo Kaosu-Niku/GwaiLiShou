@@ -115,6 +115,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1170483122739458723}
+  - {fileID: 6525848840326368329}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -130,41 +131,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecbaa2f68d7c47d49a02bcadff6fd3e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "\u6307\u5B9A\u56DE\u5408": 0
-  BossChineseName: "\u7E54\u9748\u96EA\u9DB4\u5B50"
-  BossEnglishName: Shokurei Yukizuruko
-  BossJapaneseName: "\u7E54\u9748\u96EA\u9DB4\u5B50"
-  Hp:
-  - 1000
-  - 1000
-  - 1000
-  - 1000
-  - 1000
-  CardChineseName:
-  - 
-  - "\u7E54\u7B26\u300C\u4E0D\u53EF\u8996\u7684\u7981\u5FCC\u7E54\u6CD5\u300D"
-  - 
-  - "\u5831\u6069\u300C\u66B4\u98A8\u96EA\u7684\u63F4\u52A9\u300D"
-  - "\u7DB2\u7B26\u300C\u4E0D\u6F0F\u5929\u7DB2\u300D"
-  CardEnglishName:
-  - 
-  - "\u7E54\u7B26\u300C\u4E0D\u53EF\u8996\u7684\u7981\u5FCC\u7E54\u6CD5\u300D"
-  - 
-  - "\u5831\u6069\u300C\u66B4\u98A8\u96EA\u7684\u63F4\u52A9\u300D"
-  - "\u7DB2\u7B26\u300C\u4E0D\u6F0F\u5929\u7DB2\u300D"
-  CardJapaneseName:
-  - 
-  - "\u7E54\u7B26\u300C\u4E0D\u53EF\u8996\u7684\u7981\u5FCC\u7E54\u6CD5\u300D"
-  - 
-  - "\u5831\u6069\u300C\u66B4\u98A8\u96EA\u7684\u63F4\u52A9\u300D"
-  - "\u7DB2\u7B26\u300C\u4E0D\u6F0F\u5929\u7DB2\u300D"
-  LimitTime:
-  - 30
-  - 30
-  - 30
-  - 30
-  - 30
-  KillScore: a0860100a0860100a0860100a0860100a0860100
+  Hp: 0
+  Speed: 0
+  Score: 0
+  UseStop: 0
+  GetPool: {fileID: 2915861063012907722}
   Bullet:
   - {fileID: 334444391515589448, guid: d7183ab71fceb984a84149765f4b90ff, type: 3}
   - {fileID: 4688989229317812674, guid: 32ec4233c570d8941896812dfa7af272, type: 3}
@@ -176,7 +147,41 @@ MonoBehaviour:
   - {fileID: 4785136437216720391, guid: df59ec2df14a8f646832c80838635e6e, type: 3}
   - {fileID: 9215755822734275616, guid: cf0380b16a5be114ca4570ed551faf5e, type: 3}
   - {fileID: 8879853706130600508, guid: f43aca24f9812204ba3df7cf0b398c87, type: 3}
-  AllClip: []
+  "\u6307\u5B9A\u56DE\u5408": 0
+  BossChineseName: "\u7E54\u9748\u96EA\u9DB4\u5B50"
+  BossEnglishName: Shokurei Yukizuruko
+  BossJapaneseName: "\u7E54\u9748\u96EA\u9DB4\u5B50"
+  AllBossStage:
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: 
+    CardEnglishName: 
+    CardJapaneseName: 
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: "\u7E54\u7B26\u300C\u4E0D\u53EF\u8996\u7684\u7981\u5FCC\u7E54\u6CD5\u300D"
+    CardEnglishName: "\u7E54\u7B26\u300C\u4E0D\u53EF\u8996\u7684\u7981\u5FCC\u7E54\u6CD5\u300D"
+    CardJapaneseName: "\u7E54\u7B26\u300C\u4E0D\u53EF\u8996\u7684\u7981\u5FCC\u7E54\u6CD5\u300D"
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: 
+    CardEnglishName: 
+    CardJapaneseName: 
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: "\u5831\u6069\u300C\u66B4\u98A8\u96EA\u7684\u63F4\u52A9\u300D"
+    CardEnglishName: "\u5831\u6069\u300C\u66B4\u98A8\u96EA\u7684\u63F4\u52A9\u300D"
+    CardJapaneseName: "\u5831\u6069\u300C\u66B4\u98A8\u96EA\u7684\u63F4\u52A9\u300D"
+  - Hp: 1000
+    LimitTime: 30
+    KillScore: 100000
+    CardChineseName: "\u7DB2\u7B26\u300C\u4E0D\u6F0F\u5929\u7DB2\u300D"
+    CardEnglishName: "\u7DB2\u7B26\u300C\u4E0D\u6F0F\u5929\u7DB2\u300D"
+    CardJapaneseName: "\u7DB2\u7B26\u300C\u4E0D\u6F0F\u5929\u7DB2\u300D"
 --- !u!114 &3974083728492481670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,3 +393,47 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &6873278161747660081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6525848840326368329}
+  - component: {fileID: 2915861063012907722}
+  m_Layer: 0
+  m_Name: BulletPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6525848840326368329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6873278161747660081}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3974083728492481690}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2915861063012907722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6873278161747660081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d8c9593b3ef1184182bf4d77904122d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetAllBullet: []

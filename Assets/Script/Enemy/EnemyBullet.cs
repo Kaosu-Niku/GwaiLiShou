@@ -12,13 +12,15 @@ public abstract class EnemyBullet : BulletSystem
     [SerializeField] protected float Speed; //* 子彈移動速度
     [SerializeField] bool NotClear;//* 該子彈是否不能被正常清除
     bool IsGraze = false;//* 是否擦彈
-    private void OnEnable()
+    new void OnEnable()
     {
+        base.OnEnable();
         GameRunSO.PlayerMissClearBulletAction += NowClearBullet;
         GameRunSO.BossDeathClearBulletAction += NowMustClearBullet;
     }
-    private void OnDisable()
+    new void OnDisable()
     {
+        base.OnDisable();
         GameRunSO.PlayerMissClearBulletAction -= NowClearBullet;
         GameRunSO.BossDeathClearBulletAction -= NowMustClearBullet;
     }

@@ -61,7 +61,7 @@ public abstract class Player : MonoBehaviour
     }
     protected void OpenStopPanel(InputAction.CallbackContext context)//? 開啟暫停介面
     {
-        GameRunSO.OpenStopPanelTrigger();
+        GameUiSO.OpenStopPanelTrigger();
     }
     protected abstract void CustomUseShoot();
     protected abstract void CustomUseBomb();
@@ -151,7 +151,7 @@ public abstract class Player : MonoBehaviour
         {
             DontControl = true;
             yield return new WaitForSeconds(1);
-            GameRunSO.OpenDeathPanelTrigger();
+            GameUiSO.OpenDeathPanelTrigger();
             yield break;
         }
         else

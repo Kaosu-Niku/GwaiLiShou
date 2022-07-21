@@ -5,50 +5,29 @@ using UnityEngine;
 public class 測試用BOSS : Boss
 {
     bool Dir2;
-    protected override void NewRoundFirst()
+    protected override void BossResetAction()
     {
-        switch (Round)
+        switch (Stage)
         {
             case 0:
-
+                AddBossStartAction(Action00());
                 break;
             case 1:
-
+                AddBossStartAction(Action01());
                 break;
             case 2:
-
+                AddBossStartAction(Action02());
                 break;
             case 3:
-
+                AddBossStartAction(Action03());
+                AddBossStartAction(Action03_1());
                 break;
             case 4:
-
+                AddBossStartAction(Action04());
                 break;
         }
     }
-    protected override IEnumerator NewRoundAction()
-    {
-        switch (Round)
-        {
-            case 0:
-                NowAction.Add(StartCoroutine(OneAction()));
-                break;
-            case 1:
-                NowAction.Add(StartCoroutine(TwoAction()));
-                break;
-            case 2:
-                NowAction.Add(StartCoroutine(ThreeAction()));
-                break;
-            case 3:
-                NowAction.Add(StartCoroutine(FourAction()));
-                break;
-            case 4:
-                NowAction.Add(StartCoroutine(FiveAction()));
-                break;
-        }
-        yield break;
-    }
-    IEnumerator OneAction()
+    IEnumerator Action00()
     {
         while (true)
         {
@@ -62,7 +41,7 @@ public class 測試用BOSS : Boss
             yield return new WaitForSeconds(0.2f);
         }
     }
-    IEnumerator TwoAction()
+    IEnumerator Action01()
     {
         while (true)
         {
@@ -76,7 +55,7 @@ public class 測試用BOSS : Boss
             yield return new WaitForSeconds(0.5f);
         }
     }
-    IEnumerator ThreeAction()
+    IEnumerator Action02()
     {
         while (true)
         {
@@ -90,7 +69,7 @@ public class 測試用BOSS : Boss
             yield return new WaitForSeconds(0.2f);
         }
     }
-    IEnumerator FourAction()
+    IEnumerator Action03()
     {
         int num = 0;
         while (true)
@@ -112,14 +91,14 @@ public class 測試用BOSS : Boss
             yield return 0;
         }
     }
-    IEnumerator FourOneAction()
+    IEnumerator Action03_1()
     {
         while (true)
         {
             yield return 0;
         }
     }
-    IEnumerator FiveAction()
+    IEnumerator Action04()
     {
         while (true)
         {

@@ -13,62 +13,47 @@ public class NoelNissen_Lunatic : Boss
     int Num2;
     bool Change4;
     int NowRandom5;
-    protected override void NewRoundFirst()
+    protected override void BossResetAction()
     {
-        switch (Round)
+        switch (Stage)
         {
+            case 0:
+                AddBossStartAction(Action00());
+                AddBossStartAction(Action00_1());
+                break;
             case 1:
+                AddBossStartAction(Action01());
+                AddBossStartAction(Action01_1());
+                AddBossStartAction(Action01_2());
                 Reset = new Vector3(0, 2, 0);
                 break;
             case 2:
+                AddBossStartAction(Action02());
+                AddBossStartAction(Action02_1());
                 Reset = new Vector3(0, 3, 0);
                 transform.rotation = Quaternion.identity;
                 Obj2 = Instantiate(Bullet[4]);
                 break;
             case 3:
+                AddBossStartAction(Action03());
+                AddBossStartAction(Action03_1());
+                AddBossStartAction(Action03_2());
                 Destroy(Obj2);
                 GetPlayer.ResetPoint = new Vector3(0, 2, 0);
                 break;
+            case 4:
+                AddBossStartAction(Action04());
+                AddBossStartAction(Action04_1());
+                break;
             case 5:
+                AddBossStartAction(Action05());
+                AddBossStartAction(Action05_1());
                 GetPlayer.ResetPoint = new Vector3(0, -3.5f, 0);
                 break;
         }
     }
-    protected override IEnumerator NewRoundAction()
-    {
-        switch (Round)
-        {
-            case 0:
-                NowAction.Add(StartCoroutine(OneAction()));
-                NowAction.Add(StartCoroutine(OneOneAction()));
-                break;
-            case 1:
-                NowAction.Add(StartCoroutine(TwoAction()));
-                NowAction.Add(StartCoroutine(TwoOneAction()));
-                NowAction.Add(StartCoroutine(TwoTwoAction()));
-                break;
-            case 2:
-                NowAction.Add(StartCoroutine(ThreeAction()));
-                NowAction.Add(StartCoroutine(ThreeOneAction()));
-                break;
-            case 3:
-                NowAction.Add(StartCoroutine(FourAction()));
-                NowAction.Add(StartCoroutine(FourOneAction()));
-                NowAction.Add(StartCoroutine(FourTwoAction()));
-                break;
-            case 4:
-                NowAction.Add(StartCoroutine(FiveAction()));
-                NowAction.Add(StartCoroutine(FiveOneAction()));
-                break;
-            case 5:
-                NowAction.Add(StartCoroutine(SixAction()));
-                NowAction.Add(StartCoroutine(SixOneAction()));
-                break;
-        }
-        yield break;
-    }
 
-    IEnumerator OneAction()
+    IEnumerator Action00()
     {
         while (true)
         {
@@ -95,7 +80,7 @@ public class NoelNissen_Lunatic : Boss
             yield return 0;
         }
     }
-    IEnumerator OneOneAction()
+    IEnumerator Action00_1()
     {
         while (true)
         {
@@ -118,7 +103,7 @@ public class NoelNissen_Lunatic : Boss
             Ready = true;
         }
     }
-    IEnumerator TwoAction()
+    IEnumerator Action01()
     {
         while (true)
         {
@@ -126,7 +111,7 @@ public class NoelNissen_Lunatic : Boss
             yield return new WaitForSeconds(12);
         }
     }
-    IEnumerator TwoOneAction()
+    IEnumerator Action01_1()
     {
         while (true)
         {
@@ -135,7 +120,7 @@ public class NoelNissen_Lunatic : Boss
             yield return new WaitForSeconds(0.25f);
         }
     }
-    IEnumerator TwoTwoAction()
+    IEnumerator Action01_2()
     {
         while (true)
         {
@@ -143,7 +128,7 @@ public class NoelNissen_Lunatic : Boss
             yield return 0;
         }
     }
-    IEnumerator ThreeAction()
+    IEnumerator Action02()
     {
         while (true)
         {
@@ -160,7 +145,7 @@ public class NoelNissen_Lunatic : Boss
             }
         }
     }
-    IEnumerator ThreeOneAction()
+    IEnumerator Action02_1()
     {
         while (true)
         {
@@ -179,7 +164,7 @@ public class NoelNissen_Lunatic : Boss
             Ready = true;
         }
     }
-    IEnumerator FourAction()
+    IEnumerator Action03()
     {
         while (true)
         {
@@ -189,7 +174,7 @@ public class NoelNissen_Lunatic : Boss
         }
 
     }
-    IEnumerator FourOneAction()
+    IEnumerator Action03_1()
     {
         while (true)
         {
@@ -198,7 +183,7 @@ public class NoelNissen_Lunatic : Boss
             yield return new WaitForSeconds(0.5f);
         }
     }
-    IEnumerator FourTwoAction()
+    IEnumerator Action03_2()
     {
         while (true)
         {
@@ -217,7 +202,7 @@ public class NoelNissen_Lunatic : Boss
             Ready = true;
         }
     }
-    IEnumerator FiveAction()
+    IEnumerator Action04()
     {
         float AddT = 1;
         for (float t = 0; t < 30; t += AddT)
@@ -244,7 +229,7 @@ public class NoelNissen_Lunatic : Boss
             }
         }
     }
-    IEnumerator FiveOneAction()
+    IEnumerator Action04_1()
     {
         while (true)
         {
@@ -263,7 +248,7 @@ public class NoelNissen_Lunatic : Boss
             Ready = true;
         }
     }
-    IEnumerator SixAction()
+    IEnumerator Action05()
     {
         while (true)
         {
@@ -286,7 +271,7 @@ public class NoelNissen_Lunatic : Boss
             yield return 0;
         }
     }
-    IEnumerator SixOneAction()
+    IEnumerator Action05_1()
     {
         while (true)
         {

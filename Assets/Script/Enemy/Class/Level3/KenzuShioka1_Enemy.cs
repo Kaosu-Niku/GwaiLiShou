@@ -7,7 +7,7 @@ public class KenzuShioka1_Enemy : Enemy
     [SerializeField] Vector3 Target;
     [SerializeField] bool Dir;
     [SerializeField] GameObject Bullet;
-    protected override IEnumerator StartAction()//? 敵人自定義行動
+    protected override IEnumerator CustomAction()
     {
         while (true)
         {

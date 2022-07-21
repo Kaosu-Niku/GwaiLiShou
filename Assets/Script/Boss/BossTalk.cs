@@ -45,9 +45,9 @@ public class BossTalk : MonoBehaviour
             {
                 switch (GameDataSO.Language)
                 {
-                    case 0: GameRunSO.UseTalkPanelTrigger(true, ChineseTalk[TalkCount]); break;
-                    case 1: GameRunSO.UseTalkPanelTrigger(true, EnglishTalk[TalkCount]); break;
-                    case 2: GameRunSO.UseTalkPanelTrigger(true, JapaneseTalk[TalkCount]); break;
+                    case 0: GameUiSO.UseTalkPanelTrigger(true, ChineseTalk[TalkCount]); break;
+                    case 1: GameUiSO.UseTalkPanelTrigger(true, EnglishTalk[TalkCount]); break;
+                    case 2: GameUiSO.UseTalkPanelTrigger(true, JapaneseTalk[TalkCount]); break;
                 }
                 GameRunSO.ChangeMusicTrigger(MyMusic);
                 TalkCount++;
@@ -64,9 +64,9 @@ public class BossTalk : MonoBehaviour
             {
                 switch (GameDataSO.Language)
                 {
-                    case 0: GameRunSO.UseTalkPanelTrigger(true, ChineseTalk[TalkCount]); break;
-                    case 1: GameRunSO.UseTalkPanelTrigger(true, EnglishTalk[TalkCount]); break;
-                    case 2: GameRunSO.UseTalkPanelTrigger(true, JapaneseTalk[TalkCount]); break;
+                    case 0: GameUiSO.UseTalkPanelTrigger(true, ChineseTalk[TalkCount]); break;
+                    case 1: GameUiSO.UseTalkPanelTrigger(true, EnglishTalk[TalkCount]); break;
+                    case 2: GameUiSO.UseTalkPanelTrigger(true, JapaneseTalk[TalkCount]); break;
                 }
                 TalkCount++;
             }
@@ -88,7 +88,7 @@ public class BossTalk : MonoBehaviour
 
     IEnumerator StartFight()
     {
-        GameRunSO.UseTalkPanelTrigger(false, "");
+        GameUiSO.UseTalkPanelTrigger(false, "");
         GameRunSO.ForPlayerDontControlTrigger(false);
         this.enabled = false;
         TalkCount++;
@@ -97,7 +97,7 @@ public class BossTalk : MonoBehaviour
     }
     IEnumerator EndTalk()
     {
-        GameRunSO.UseTalkPanelTrigger(false, "");
+        GameUiSO.UseTalkPanelTrigger(false, "");
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(NextScene);
     }

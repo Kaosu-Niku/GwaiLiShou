@@ -2,63 +2,57 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public abstract class Enemy : MonoBehaviour
 {
     [SerializeField] float Hp;
-    [SerializeField] Vector3 FirstPos;
     [SerializeField] protected float Speed;
-    [SerializeField] float DestroyTime;
     [SerializeField] int Score;
-    protected Player GetPlayer;//* 控制玩家
-
-    protected virtual IEnumerator StartAction()//? 敵人自定義行動
+    [SerializeField] bool UseStop;//? 是否是能停止生成進度的敵人
+    private Player _GetPlayer;
+    protected Player GetPlayer { get => _GetPlayer; }
+    protected abstract IEnumerator CustomAction();//? 敵人自定義行動
+    protected IEnumerator StartAction()
     {
-        Vector3 Left = new Vector3(-3.5f, transform.position.y, 0);
-        Vector3 Right = new Vector3(3.5f, transform.position.y, 0);
-        //? 敵人要做的事
-        while (true)
-        {
-            while (transform.position.x > -3)
-            {
-                transform.position = Vector3.Lerp(transform.position, Left, Time.deltaTime);
-                yield return 0;
-            }
-            while (transform.position.x < 3)
-            {
-                transform.position = Vector3.Lerp(transform.position, Right, Time.deltaTime);
-                yield return 0;
-            }
-            yield return 0;
-        }
+        if (UseStop == true)
+            GameRunSO.StopEnemyPoolTrigger(true);
+        yield return StartCoroutine(CustomAction());
+        yield return 0;
+        Clear();
     }
-    public void Hurt(float damage)
+    protected virtual void Hurt(float damage)//? BOSS覆寫
     {
         Hp -= damage; Debug.Log(Hp);
-        {
-
-        }
         if (Hp < 0)
-            Death();
+        {
+            GameDataSO.Score += Score;
+            Clear();
+        }
     }
-    protected void Death()
+    public void CallHurt(float damage)
     {
-        GameDataSO.Score += Score;
-        Destroy(this.gameObject);
+        Hurt(damage);
     }
-    private void OnEnable()
+    protected virtual void Clear()//? BOSS覆寫
+    {
+        if (UseStop == true)
+            GameRunSO.StopEnemyPoolTrigger(false);
+        gameObject.SetActive(false);
+    }
+    protected void Awake()
+    {
+        _GetPlayer = GameRunSO.Player;
+    }
+    protected void OnEnable()
     {
         GameRunSO.AllEnemy.Add(this.gameObject);
     }
-    private void OnDisable()
+    protected void OnDisable()
     {
         GameRunSO.AllEnemy.Remove(this.gameObject);
     }
     private void Start()
     {
-        transform.position = FirstPos;
-        Invoke("Death", DestroyTime);
         StartCoroutine(StartAction());
-        GetPlayer = GameRunSO.Player;
     }
     protected void OnTriggerEnter2D(Collider2D other)
     {

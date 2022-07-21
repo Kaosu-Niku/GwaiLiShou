@@ -126,14 +126,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8776245522736455634}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf3afa287236f6449e0a4b1212d6cff, type: 3}
+  m_Script: {fileID: 11500000, guid: 90e77688af8eb3d4aa6507b8147398bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hp: 999999
-  FirstPos: {x: -2, y: 2, z: 0}
-  Speed: 0
-  DestroyTime: 999
-  Score: 0
+  Hp: 99999
+  Speed: 10
+  Score: 9999
+  UseStop: 1
 --- !u!50 &6833034752105652227
 Rigidbody2D:
   serializedVersion: 4
