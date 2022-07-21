@@ -27,9 +27,6 @@ public abstract class Bullet : BulletSystem
                 Enemy e = other.GetComponent<Enemy>();
                 if (e)
                     e.CallHurt(BulletAttack);
-                Boss b = other.GetComponent<Boss>();
-                if (b)
-                    b.CallHurt(BulletAttack);
             }
             finally
             {

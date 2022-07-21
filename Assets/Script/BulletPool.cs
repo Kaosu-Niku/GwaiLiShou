@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BulletPool : MonoBehaviour
 {
+    public EffectPool effectPool;
     [System.Serializable]
     public class Bullet
     {
@@ -23,6 +24,7 @@ public class BulletPool : MonoBehaviour
                 BulletSystem b = Instantiate(SetAllBullet[x].bullet);
                 q.Enqueue(b);
                 b.MyPool = this;
+                b.effectPool = effectPool;
                 b.MyTag = SetAllBullet[x].tag;
                 b.gameObject.SetActive(false);
             }
@@ -49,6 +51,7 @@ public class BulletPool : MonoBehaviour
                     {
                         BulletSystem b = Instantiate(SetAllBullet[x].bullet);
                         b.MyPool = this;
+                        b.effectPool = effectPool;
                         b.MyTag = SetAllBullet[x].tag;
                         b.transform.position = pos;
                         b.transform.rotation = rot;

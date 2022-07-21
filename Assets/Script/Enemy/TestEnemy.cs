@@ -20,7 +20,7 @@ public class TestEnemy : Enemy
                 transform.position = Vector3.Lerp(transform.position, Right, Time.deltaTime);
                 yield return 0;
             }
-            yield break;
+            yield return 0;
         }
     }
 }

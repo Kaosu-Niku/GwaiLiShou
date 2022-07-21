@@ -28,6 +28,8 @@ public class ReimuA : Player
     {
         while (MyInput.Player.Shoot.ReadValue<float>() == 1)
         {
+            GetPool.OutBullet("Main", transform.position + Vector3.left * 0.25f, Quaternion.Euler(0, 0, 90));
+            GetPool.OutBullet("Main", transform.position + Vector3.right * 0.25f, Quaternion.Euler(0, 0, 90));
             if (MyInput.Player.Slow.ReadValue<float>() == 1)//? 集中射擊
             {
                 if (A1.gameObject.activeInHierarchy == false)

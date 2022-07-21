@@ -30,4 +30,12 @@ public class ReimuBulletA0 : Bullet
             yield return 0;
         }
     }
+    new void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            effectPool.OutEffect("A1", transform.position, Quaternion.identity);
+        }
+        base.OnTriggerEnter2D(other);
+    }
 }

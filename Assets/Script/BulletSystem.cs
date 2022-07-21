@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class BulletSystem : MonoBehaviour
 {
     [HideInInspector] public BulletPool MyPool;
+    [HideInInspector] public EffectPool effectPool;
     [HideInInspector] public string MyTag;
     Coroutine C;
     protected abstract IEnumerator FirstDoing();
