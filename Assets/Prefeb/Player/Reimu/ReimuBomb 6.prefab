@@ -129,8 +129,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyPool: {fileID: 0}
+  effectPool: {fileID: 0}
   MyTag: 
-  BulletMagn: 1
+  BulletMagn: 10
   Speed: 10
   NotClear: 1
   StartTime: 4.6

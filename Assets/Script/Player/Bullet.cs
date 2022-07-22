@@ -9,7 +9,7 @@ public abstract class Bullet : BulletSystem
     {
         yield return StartCoroutine(Doing());
     }
-    [SerializeField] protected float BulletMagn; //* 子彈傷害倍率
+    [SerializeField] protected float BulletMagn; //* 子彈自訂傷害
     [SerializeField] protected float Speed; //* 子彈移動速度
     protected float BulletAttack; //* 子彈總攻擊力
     [SerializeField] bool NotClear;//* 該子彈是否不能被正常清除
@@ -37,9 +37,11 @@ public abstract class Bullet : BulletSystem
     }
     new void OnEnable()
     {
-        base.OnEnable();
+        BulletAttack = BulletMagn;
         //? 子彈總攻擊力
-        BulletAttack = (GameDataSO.PlayerPower + GameDataSO.PlayerSkillPower) * BulletMagn;
+        base.OnEnable();
+
+
     }
 
 }

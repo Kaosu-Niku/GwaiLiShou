@@ -41,7 +41,7 @@ public class GameUI : MonoBehaviour
     }
     private void ChangePowerText()
     {
-        PowerText.text = "" + GameDataSO.PlayerPower + " / 5.00";
+        PowerText.text = "" + GameDataSO.PlayerPower + " / 4.00";
     }
     private void ChangePointText()
     {

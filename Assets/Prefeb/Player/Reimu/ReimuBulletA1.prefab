@@ -30,7 +30,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1552106223714623374}
+  - {fileID: 3172424247619692942}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyPool: {fileID: 0}
+  effectPool: {fileID: 0}
   MyTag: 
   BulletMagn: 1
   Speed: 0
@@ -87,66 +88,74 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.75
---- !u!1001 &3586472287106639882
+  m_Radius: 1
+--- !u!1001 &5307251008798233302
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 9081646597886774703}
     m_Modifications:
-    - target: {fileID: 2616457140472706948, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
+    - target: {fileID: 7323296818533874471, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
+      propertyPath: m_Name
+      value: Reimu-TypeA_Heisoku
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2616457140472706948, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2616457140472706948, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2616457140472706948, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2616457140472706948, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2616457140472706948, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2616457140472706948, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2616457140472706948, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2616457140472706948, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2616457140472706948, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2616457140472706948, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
+    - target: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2616457140472707067, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
-      propertyPath: m_Name
-      value: Reimu_TypeA_Heisoku
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
---- !u!4 &1552106223714623374 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
+--- !u!4 &3172424247619692942 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2616457140472706948, guid: edd2615c2d600a841a06b36de0044ce2, type: 3}
-  m_PrefabInstance: {fileID: 3586472287106639882}
+  m_CorrespondingSourceObject: {fileID: 7323296818533874520, guid: 08829c5849be05846b43cdb4579780ec, type: 3}
+  m_PrefabInstance: {fileID: 5307251008798233302}
   m_PrefabAsset: {fileID: 0}

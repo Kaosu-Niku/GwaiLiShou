@@ -180,6 +180,7 @@ Transform:
   - {fileID: 1682987371967304611}
   - {fileID: 1424326675268518913}
   - {fileID: 256144823809364165}
+  - {fileID: 5756810678162389719}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -527,7 +528,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8c9593b3ef1184182bf4d77904122d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effectPool: {fileID: 3811069996791924860}
   SetAllBullet:
+  - tag: Main
+    bullet: {fileID: 2555951274699442203, guid: bedea9de7fabc934aaa278e4fa683597, type: 3}
+    count: 10
   - tag: B0
     bullet: {fileID: 4908803858080689698, guid: aeca51585878dde4296c7b64d29450fe, type: 3}
     count: 10
@@ -665,6 +670,59 @@ Transform:
   m_Father: {fileID: 2817190866568218774}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7839060845658622032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5756810678162389719}
+  - component: {fileID: 3811069996791924860}
+  m_Layer: 0
+  m_Name: EffectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5756810678162389719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839060845658622032}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2817190866568218774}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3811069996791924860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839060845658622032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd3b63e15ff1ee4bbb94745d8afb790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetAllBullet:
+  - tag: Main
+    effect: {fileID: -3883165571337063841, guid: 81f9094512676fb45b71093b7f8f2a9c, type: 3}
+    count: 5
+  - tag: A0
+    effect: {fileID: -3883165571337063841, guid: 81f9094512676fb45b71093b7f8f2a9c, type: 3}
+    count: 10
+  - tag: A1
+    effect: {fileID: 4217947446047554443, guid: 919a0db0de8ffa741af226f3da4455d9, type: 3}
+    count: 5
 --- !u!1 &8879070113637242823
 GameObject:
   m_ObjectHideFlags: 0

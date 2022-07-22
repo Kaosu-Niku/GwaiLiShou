@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: S1_Lunatic
   m_EditorClassIdentifier: 
   _AllEnemyData:
-  - Who: {fileID: 2416934013267320387, guid: 468fd4ca425f56d46a61000eb29f249b, type: 3}
+  - Who: {fileID: 4020507121315160759, guid: 7c0e818af124f4e4f98c5a3a82c9c93b, type: 3}
     StartTime: 1
     StartPos: {x: 0, y: 3}

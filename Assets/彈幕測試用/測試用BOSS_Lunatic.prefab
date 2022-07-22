@@ -128,31 +128,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1960b52ead651e04585bbe90d909eb42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "\u6307\u5B9A\u56DE\u5408": 0
-  BossName: "\u6E2C\u8A66\u7528BOSS"
-  BossNameEnglish: 
-  Hp:
-  - 1000
-  - 1000
-  - 1000
-  - 1000
-  - 1000
-  CardName:
-  - "\u6700\u96E3"
-  - "\u964D\u5C04\u901F"
-  - "\u964D\u5BC6\u5EA6"
-  - "\u5206\u6CE2\u6578"
-  - 
-  LimitTime:
-  - 30
-  - 30
-  - 30
-  - 30
-  - 30
-  KillScore: 1027000010270000102700001027000010270000
+  Hp: 0
+  Speed: 0
+  Score: 0
+  UseStop: 0
+  GetPool: {fileID: 0}
   Bullet:
   - {fileID: 6305558191708906629, guid: 4a1a66962564d7c499f020cb2fe454f0, type: 3}
-  AllClip: []
+  "\u6307\u5B9A\u56DE\u5408": 0
+  BossChineseName: 
+  BossEnglishName: 
+  BossJapaneseName: 
+  AllBossStage:
+  - Hp: 8000
+    LimitTime: 50
+    KillScore: 0
+    CardChineseName: 
+    CardEnglishName: 
+    CardJapaneseName: 
+  - Hp: 8000
+    LimitTime: 50
+    KillScore: 0
+    CardChineseName: 
+    CardEnglishName: 
+    CardJapaneseName: 
 --- !u!50 &1212341064020696421
 Rigidbody2D:
   serializedVersion: 4

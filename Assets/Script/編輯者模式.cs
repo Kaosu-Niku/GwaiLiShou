@@ -12,4 +12,13 @@ public class 編輯者模式 : MonoBehaviour
         AllEventSO.ChangeTime(改變運行時間);
         Instantiate(AllPlayer[預設玩家]);
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))//? 加火力
+        {
+            GameDataSO.PlayerPower += 1;
+            if (GameDataSO.PlayerPower > 4)
+                GameDataSO.PlayerPower = 1;
+        }
+    }
 }

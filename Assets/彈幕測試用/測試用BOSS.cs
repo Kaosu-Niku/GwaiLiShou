@@ -31,13 +31,13 @@ public class 測試用BOSS : Boss
     {
         while (true)
         {
-            if (Dir2 == false)
-                for (int x = 0; x < 72; x++)
-                    Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, x * 5));
-            else
-                for (int x = 0; x < 72; x++)
-                    Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, 2.5f + x * 5));
-            Dir2 = !Dir2;
+            // if (Dir2 == false)
+            //     for (int x = 0; x < 72; x++)
+            //         Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, x * 5));
+            // else
+            //     for (int x = 0; x < 72; x++)
+            //         Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, 2.5f + x * 5));
+            // Dir2 = !Dir2;
             yield return new WaitForSeconds(0.2f);
         }
     }
@@ -45,13 +45,13 @@ public class 測試用BOSS : Boss
     {
         while (true)
         {
-            if (Dir2 == false)
-                for (int x = 0; x < 72; x++)
-                    Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, x * 5));
-            else
-                for (int x = 0; x < 72; x++)
-                    Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, 2.5f + x * 5));
-            Dir2 = !Dir2;
+            // if (Dir2 == false)
+            //     for (int x = 0; x < 72; x++)
+            //         Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, x * 5));
+            // else
+            //     for (int x = 0; x < 72; x++)
+            //         Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, 2.5f + x * 5));
+            // Dir2 = !Dir2;
             yield return new WaitForSeconds(0.5f);
         }
     }
@@ -59,13 +59,13 @@ public class 測試用BOSS : Boss
     {
         while (true)
         {
-            if (Dir2 == false)
-                for (int x = 0; x < 45; x++)
-                    Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, x * 8));
-            else
-                for (int x = 0; x < 45; x++)
-                    Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, 4 + x * 8));
-            Dir2 = !Dir2;
+            // if (Dir2 == false)
+            //     for (int x = 0; x < 45; x++)
+            //         Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, x * 8));
+            // else
+            //     for (int x = 0; x < 45; x++)
+            //         Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, 4 + x * 8));
+            // Dir2 = !Dir2;
             yield return new WaitForSeconds(0.2f);
         }
     }
@@ -74,14 +74,14 @@ public class 測試用BOSS : Boss
         int num = 0;
         while (true)
         {
-            if (Dir2 == false)
-                for (int x = 0; x < 72; x++)
-                    Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, x * 5));
-            else
-                for (int x = 0; x < 72; x++)
-                    Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, 2.5f + x * 5));
-            Dir2 = !Dir2;
-            num++;
+            // if (Dir2 == false)
+            //     for (int x = 0; x < 72; x++)
+            //         Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, x * 5));
+            // else
+            //     for (int x = 0; x < 72; x++)
+            //         Instantiate(Bullet[0], transform.position, Quaternion.Euler(0, 0, 2.5f + x * 5));
+            // Dir2 = !Dir2;
+            // num++;
             yield return new WaitForSeconds(0.2f);
             if (num > 5)
             {

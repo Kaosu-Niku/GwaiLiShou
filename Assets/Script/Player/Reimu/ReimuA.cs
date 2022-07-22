@@ -5,10 +5,6 @@ using UnityEngine;
 public class ReimuA : Player
 {
     BulletSystem A1;
-    [SerializeField] Transform ShootPos1;
-    [SerializeField] Transform ShootPos2;
-    [SerializeField] Transform ShootPos3;
-    [SerializeField] Transform ShootPos4;
     protected override void CustomUseBomb()
     {
         GetPool.OutBullet("Bomb", transform.position, Quaternion.Euler(0, 0, 0));
@@ -26,24 +22,44 @@ public class ReimuA : Player
     }
     IEnumerator ShootIEnum()
     {
+        StartCoroutine(MainShoot());
         while (MyInput.Player.Shoot.ReadValue<float>() == 1)
         {
-            GetPool.OutBullet("Main", transform.position + Vector3.left * 0.25f, Quaternion.Euler(0, 0, 90));
-            GetPool.OutBullet("Main", transform.position + Vector3.right * 0.25f, Quaternion.Euler(0, 0, 90));
             if (MyInput.Player.Slow.ReadValue<float>() == 1)//? 集中射擊
             {
                 if (A1.gameObject.activeInHierarchy == false)
+                {
                     A1.transform.position = transform.position;
-                A1.gameObject.SetActive(true);
+                    A1.gameObject.SetActive(true);
+                }
             }
             else//? 一般射擊
             {
 
-                GetPool.OutBullet("A0", ShootPos1.position, Quaternion.Euler(0, 0, 120));
-                GetPool.OutBullet("A0", ShootPos2.position, Quaternion.Euler(0, 0, 105));
-                GetPool.OutBullet("A0", ShootPos3.position, Quaternion.Euler(0, 0, 75));
-                GetPool.OutBullet("A0", ShootPos4.position, Quaternion.Euler(0, 0, 60));
-                A1.gameObject.SetActive(false);
+                if (GameDataSO.PlayerPower == 4)
+                {
+                    GetPool.OutBullet("A0", new Vector3(transform.position.x - 0.8f, transform.position.y - 0.15f, 0), Quaternion.Euler(0, 0, 120));
+                    GetPool.OutBullet("A0", new Vector3(transform.position.x - 0.4f, transform.position.y - 0.5f, 0), Quaternion.Euler(0, 0, 105));
+                    GetPool.OutBullet("A0", new Vector3(transform.position.x + 0.4f, transform.position.y - 0.5f, 0), Quaternion.Euler(0, 0, 75));
+                    GetPool.OutBullet("A0", new Vector3(transform.position.x + 0.8f, transform.position.y - 0.15f, 0), Quaternion.Euler(0, 0, 60));
+                }
+                else if (GameDataSO.PlayerPower >= 3)
+                {
+                    GetPool.OutBullet("A0", new Vector3(transform.position.x - 0.8f, transform.position.y - 0.15f, 0), Quaternion.Euler(0, 0, 120));
+                    GetPool.OutBullet("A0", new Vector3(transform.position.x, transform.position.y - 0.5f, 0), Quaternion.Euler(0, 0, 105));
+                    GetPool.OutBullet("A0", new Vector3(transform.position.x + 0.8f, transform.position.y - 0.15f, 0), Quaternion.Euler(0, 0, 60));
+                }
+                else if (GameDataSO.PlayerPower >= 2)
+                {
+                    GetPool.OutBullet("A0", new Vector3(transform.position.x - 0.8f, transform.position.y - 0.15f, 0), Quaternion.Euler(0, 0, 120));
+                    GetPool.OutBullet("A0", new Vector3(transform.position.x + 0.8f, transform.position.y - 0.15f, 0), Quaternion.Euler(0, 0, 60));
+                }
+                else
+                {
+                    GetPool.OutBullet("A0", new Vector3(transform.position.x, transform.position.y + 0.5f, 0), Quaternion.Euler(0, 0, 105));
+                }
+                if (A1.gameObject.activeInHierarchy == true)
+                    A1.gameObject.SetActive(false);
             }
             yield return new WaitForSeconds(0.1f);
         }
@@ -54,5 +70,15 @@ public class ReimuA : Player
     {
         A1 = GetPool.OutBullet("A1", transform.position, Quaternion.identity);
         A1.gameObject.SetActive(false);
+    }
+    IEnumerator MainShoot()
+    {
+        while (MyInput.Player.Shoot.ReadValue<float>() == 1)
+        {
+            GetPool.OutBullet("Main", new Vector3(transform.position.x - 0.15f, transform.position.y + 0.25f, 0), Quaternion.Euler(0, 0, 90));
+            GetPool.OutBullet("Main", new Vector3(transform.position.x + 0.15f, transform.position.y + 0.25f, 0), Quaternion.Euler(0, 0, 90));
+            yield return new WaitForSeconds(0.05f);
+        }
+        yield break;
     }
 }

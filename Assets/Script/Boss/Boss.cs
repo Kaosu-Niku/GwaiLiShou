@@ -137,7 +137,7 @@ public abstract class Boss : Enemy
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.O))
         { //? 測試用，自動消除boss一條血
             AllBossStage[Stage].LimitTime = 0;
         }

@@ -34,7 +34,7 @@ public class ReimuBulletA0 : Bullet
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            effectPool.OutEffect("A1", transform.position, Quaternion.identity);
+            effectPool.OutEffect("A0", transform.position, Quaternion.identity);
         }
         base.OnTriggerEnter2D(other);
     }
